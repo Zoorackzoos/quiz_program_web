@@ -14,9 +14,9 @@ export interface Choice
 // A single question inside a module.
 export interface Question
 {
-    id: number;                         // Unique number within the module (1, 2, 3, ...)
-    prompt: string;                     // The question text. Wrap LaTeX in $...$ or $$...$$
-    type: "text" | "multiple-choice";   // Answer field type
+    id: number;                                          // Unique number within the module (1, 2, 3, ...)
+    prompt: string;                                      // The question text. Wrap LaTeX in $...$ or $$...$$
+    type: "text" | "multiple-choice" | "multi-select";   // Answer field type
 
     // For type === "multiple-choice" only:
     choices?: Choice[];

@@ -1,0 +1,27 @@
+{
+  "id": "testing-multi-select-choice",
+  "title": "testing-multi-select-choice",
+  "description": "testing multiple select choice.",
+  "image": "assets/tung_tung_tung_sahur_image_streched.png",
+  "questions": [
+    {
+      "id": 0,
+      "prompt": "can you find all of the Rs in strawberry?",
+      "type": "multi-select",
+      "choices": [
+        { "label": "S",  "value": "0"  },
+        { "label": "t",  "value": "1"  },
+        { "label": "r", "value": "2" },
+        { "label": "a",  "value": "3"  },
+        { "label": "w",  "value": "4"  },
+        { "label": "b",  "value": "5"  },
+        { "label": "e", "value": "6" },
+        { "label": "r",  "value": "7"  },
+        { "label": "r", "value": "8"},
+        { "label": "y", "value": "9"}
+      ],
+      "correctAnswer": "[2,7,8]",
+      "explanation": "look man i'm not a teacher just figure it out dude."
+    }
+  ]
+}

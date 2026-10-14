@@ -21,6 +21,7 @@ import LinearAlgebraExam2Practice from "./Linear-Algebra-Exam-2-practice.json"
 import LinearAlgebra314FinalPractice1 from "./Linear-Algebra-314-final-practice-1.json"
 import LinearAlgebra314FinalPractice2 from "./Linear-Algebra-314-final-practice-2.json"
 import LinearAlgebraReciPractice from "./Linear-Algebra-reci-practice.json"
+import TestingMultiSelectChoice from "./testing-multi-select-choice.json"
 
 // -- Add every imported module to this array --
 // The order here is the order they appear on the home screen.
@@ -31,6 +32,7 @@ export const allModules: Module[] = [
     LinearAlgebra314FinalPractice1 as Module,
     LinearAlgebra314FinalPractice2 as Module,
     LinearAlgebraReciPractice as Module,
+    TestingMultiSelectChoice as Module,
 
     // Add more modules here, e.g.:
     // myNewModule as Module,

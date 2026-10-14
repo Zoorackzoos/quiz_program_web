@@ -200,10 +200,16 @@ function renderQuizQuestion(mod: Module, questionIndex: number): void
 
     // -- Render answer area depending on question type --
     const answerArea = document.getElementById("answer-area")!;
+
     if (q.type === "multiple-choice")
     {
         renderMultipleChoiceField(answerArea, q, questionIndex);
-    } else
+    }
+    else if (q.type === "multi-select")
+    {
+        renderMultiSelectChoiceField(answerArea, q, questionIndex);
+    }
+    else
     {
         renderTextAnswerField(answerArea, q, questionIndex);
     }
@@ -287,6 +293,102 @@ function renderMultipleChoiceField(container: HTMLElement, q: Question, index: n
         labelText.innerHTML = renderLatexString(choice.label);
 
         label.appendChild(radio);
+        label.appendChild(labelText);
+        wrapper.appendChild(label);
+    });
+
+    container.appendChild(wrapper);
+    // Render KaTeX inside the new elements
+    renderAllLatex(wrapper);
+}
+
+function renderMultiSelectChoiceField(container: HTMLElement, q: Question, index: number)
+{
+    if (!q.choices) return;
+    const wrapper = document.createElement("div");
+    // ms = multi select
+    wrapper.className = "ms-wrapper";
+
+    q.choices.forEach((choice) =>
+    {
+        const label = document.createElement("label");
+        label.className = "ms-option";
+
+        const checkbox = document.createElement("input");
+        checkbox.type = "checkbox";
+        checkbox.name = `question-${q.id}`;
+        checkbox.value = choice.value;
+        checkbox.checked = userAnswers[index] === choice.value;
+
+        checkbox.addEventListener("change", () =>
+        {
+            // userAnswers ia list that has to contains strings
+            // adding a number to the answer string and then sorting it.
+            if (userAnswers[index].indexOf(choice.value) === -1)
+            {
+                console.log("before: ",(userAnswers[index]))
+                if (userAnswers[index] === "")
+                {
+                    userAnswers[index] += choice.value;
+                }
+                else
+                {
+                    // if this is the 2nd answer
+                    if (userAnswers[index].length === 1)
+                    {
+                        userAnswers[index] += ','+choice.value;
+                    }
+                    else // if there are multiple answers already selected.
+                    {
+                        let tempUserAnswersList: string[] = userAnswers[index].split(",");
+                        tempUserAnswersList.push(choice.value);
+                        tempUserAnswersList = tempUserAnswersList.sort();
+                        userAnswers[index] = tempUserAnswersList.join(',');
+                    }
+                }
+                console.log("after: ",(userAnswers[index]))
+            }
+            // removing a number from the answer string and then sorting it
+            else if (userAnswers[index].indexOf(choice.value) > -1)
+            {
+                console.log("before: ",(userAnswers[index]))
+                // if there is only one element
+                if (userAnswers[index].length === 1)
+                {
+                    // idk if this works or not.
+                    userAnswers[index] = "";
+                }
+                else
+                {
+                    // if there is multiple answers selected
+                    let tempUserAnswersList: string[] = userAnswers[index].split(",");
+
+                    // removing the item.
+                    let indexOfChoiceDotValue: number = userAnswers[index].indexOf(choice.value);
+                    console.log("\tindexOfChoiceDotValue: ",indexOfChoiceDotValue)
+                    if (indexOfChoiceDotValue > -1)
+                    {
+                        tempUserAnswersList.splice(indexOfChoiceDotValue, 1);
+                    }
+
+                    tempUserAnswersList = tempUserAnswersList.sort();
+                    userAnswers[index] = tempUserAnswersList.join(',');
+                }
+                console.log("after: ",(userAnswers[index]))
+            }
+
+            // Visually mark selected option
+            wrapper.querySelectorAll(".msc-option").forEach(el => el.classList.remove("selected"));
+            label.classList.add("selected");
+        });
+
+        if (checkbox.checked) label.classList.add("selected");
+
+        const labelText = document.createElement("span");
+        labelText.className = "ms-label-text";
+        labelText.innerHTML = renderLatexString(choice.label);
+
+        label.appendChild(checkbox);
         label.appendChild(labelText);
         wrapper.appendChild(label);
     });
