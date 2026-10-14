@@ -304,6 +304,9 @@ function renderMultipleChoiceField(container: HTMLElement, q: Question, index: n
 
 function renderMultiSelectChoiceField(container: HTMLElement, q: Question, index: number)
 {
+    console.log("renderMultiSelectChoiceField")
+    let tab_amount:string = "\t"
+
     if (!q.choices) return;
     const wrapper = document.createElement("div");
     // ms = multi select
@@ -326,19 +329,17 @@ function renderMultiSelectChoiceField(container: HTMLElement, q: Question, index
             // adding a number to the answer string and then sorting it.
             if (userAnswers[index].indexOf(choice.value) === -1)
             {
-                console.log("before: ",(userAnswers[index]))
+                console.log(tab_amount,"before: ", (userAnswers[index]))
                 if (userAnswers[index] === "")
                 {
                     userAnswers[index] += choice.value;
-                }
-                else
+                } else
                 {
                     // if this is the 2nd answer
                     if (userAnswers[index].length === 1)
                     {
-                        userAnswers[index] += ','+choice.value;
-                    }
-                    else // if there are multiple answers already selected.
+                        userAnswers[index] += ',' + choice.value;
+                    } else // if there are multiple answers already selected.
                     {
                         let tempUserAnswersList: string[] = userAnswers[index].split(",");
                         tempUserAnswersList.push(choice.value);
@@ -346,26 +347,25 @@ function renderMultiSelectChoiceField(container: HTMLElement, q: Question, index
                         userAnswers[index] = tempUserAnswersList.join(',');
                     }
                 }
-                console.log("after: ",(userAnswers[index]))
+                console.log(tab_amount,"after: ", (userAnswers[index]))
             }
             // removing a number from the answer string and then sorting it
             else if (userAnswers[index].indexOf(choice.value) > -1)
             {
-                console.log("before: ",(userAnswers[index]))
+                console.log(tab_amount,"before: ", (userAnswers[index]))
                 // if there is only one element
                 if (userAnswers[index].length === 1)
                 {
                     // idk if this works or not.
                     userAnswers[index] = "";
-                }
-                else
+                } else
                 {
                     // if there is multiple answers selected
                     let tempUserAnswersList: string[] = userAnswers[index].split(",");
 
                     // removing the item.
                     let indexOfChoiceDotValue: number = userAnswers[index].indexOf(choice.value);
-                    console.log("\tindexOfChoiceDotValue: ",indexOfChoiceDotValue)
+                    console.log(tab_amount,"\tindexOfChoiceDotValue: ", indexOfChoiceDotValue)
                     if (indexOfChoiceDotValue > -1)
                     {
                         tempUserAnswersList.splice(indexOfChoiceDotValue, 1);
@@ -374,11 +374,11 @@ function renderMultiSelectChoiceField(container: HTMLElement, q: Question, index
                     tempUserAnswersList = tempUserAnswersList.sort();
                     userAnswers[index] = tempUserAnswersList.join(',');
                 }
-                console.log("after: ",(userAnswers[index]))
+                console.log(tab_amount,"after: ", (userAnswers[index]))
             }
 
             // Visually mark selected option
-            wrapper.querySelectorAll(".msc-option").forEach(el => el.classList.remove("selected"));
+            wrapper.querySelectorAll(".ms-option").forEach(el => el.classList.remove("selected"));
             label.classList.add("selected");
         });
 

@@ -462,13 +462,13 @@ input[type="text"] {
 }
 
 /* Multiple choice options */
-.mc-wrapper {
+.mc-wrapper, .ms-wrapper {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
 
-.mc-option {
+.mc-option, .ms-option {
   display: flex;
   align-items: center;
   gap: 12px;
@@ -478,21 +478,21 @@ input[type="text"] {
   cursor: pointer;
   transition: background 0.15s, border-color 0.15s;
 }
-.mc-option:hover {
+.mc-option:hover, .ms-option:hover {
   background: var(--color-primary-light);
   border-color: var(--color-primary);
 }
-.mc-option.selected {
+.mc-option.selected, .ms-option.selected {
   background: var(--color-primary-light);
   border-color: var(--color-primary);
 }
-.mc-option input[type="radio"] {
+.mc-option input[type="radio"], .mc-option input[type="checkbox"] {
   accent-color: var(--color-primary);
   width: 18px;
   height: 18px;
   flex-shrink: 0;
 }
-.mc-label-text {
+.mc-label-text, .mc-label-text {
   font-size: 1rem;
   color: var(--color-text);
 }
