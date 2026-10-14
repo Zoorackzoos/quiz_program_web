@@ -1,0 +1,2076 @@
+{
+  "id": "csce-469-midterm-practice-security",
+  "title": "CSCE 469 Midterm Practice: Cybersecurity Core Concepts",
+  "description": "Comprehensive practice questions based on CSCE 469 cybersecurity slides 03-07, 11, and 12. Excludes introductions, project proposals, and Android-focused decks. Explanations include deck and slide references for review.",
+  "image": "assets/old_man.png",
+  "questions": [
+    {
+      "id": 1,
+      "prompt": "Which statement best captures the course definition of security?",
+      "type": "multiple-choice",
+      "choices": [
+        {
+          "label": "A condition of freedom from risk or danger, never absolute",
+          "value": "a"
+        },
+        {
+          "label": "A collection of hardware, software, policies, and procedures",
+          "value": "b"
+        },
+        {
+          "label": "A guarantee that no incident will occur",
+          "value": "c"
+        },
+        {
+          "label": "Compliance with every applicable regulation",
+          "value": "d"
+        }
+      ],
+      "correctAnswer": "a",
+      "explanation": "Security is a condition, not a product list, and risk can be eliminated, reduced, or tolerated. Source: Deck 03, slide 7."
+    },
+    {
+      "id": 2,
+      "prompt": "Which are the three elements of the CIA triad?",
+      "type": "multi-select",
+      "choices": [
+        {
+          "label": "Confidentiality",
+          "value": "confidentiality"
+        },
+        {
+          "label": "Integrity",
+          "value": "integrity"
+        },
+        {
+          "label": "Availability",
+          "value": "availability"
+        },
+        {
+          "label": "Accountability",
+          "value": "accountability"
+        }
+      ],
+      "correctAnswer": "confidentiality,integrity,availability",
+      "explanation": "CIA means confidentiality, integrity, and availability. Accountability is important but is not one of the three CIA terms. Source: Deck 03, slide 8."
+    },
+    {
+      "id": 3,
+      "prompt": "A payroll record is changed by an unauthorized person. Which CIA property was violated most directly?",
+      "type": "multiple-choice",
+      "choices": [
+        {
+          "label": "Integrity",
+          "value": "a"
+        },
+        {
+          "label": "Confidentiality",
+          "value": "b"
+        },
+        {
+          "label": "Availability",
+          "value": "c"
+        },
+        {
+          "label": "Resilience",
+          "value": "d"
+        }
+      ],
+      "correctAnswer": "a",
+      "explanation": "Integrity guards against improper modification or destruction of information. Source: Deck 03, slide 8."
+    },
+    {
+      "id": 4,
+      "prompt": "Complete the course risk relationship: risk = threat × _____.",
+      "type": "text",
+      "correctAnswer": "impact",
+      "explanation": "The slide defines risk as threat times the consequence to the targeted assets, namely impact. Source: Deck 03, slide 18."
+    },
+    {
+      "id": 5,
+      "prompt": "Which option correctly distinguishes a vulnerability from an exploit?",
+      "type": "multiple-choice",
+      "choices": [
+        {
+          "label": "A vulnerability is a weakness; an exploit is a method that takes advantage of it",
+          "value": "a"
+        },
+        {
+          "label": "A vulnerability is an attack; an exploit is the damaged asset",
+          "value": "b"
+        },
+        {
+          "label": "A vulnerability is the impact; an exploit is the probability of attack",
+          "value": "c"
+        },
+        {
+          "label": "They are interchangeable terms",
+          "value": "d"
+        }
+      ],
+      "correctAnswer": "a",
+      "explanation": "A vulnerability is a flaw in protections; an exploit is the method used to take advantage of that flaw. Source: Deck 03, slide 18."
+    },
+    {
+      "id": 6,
+      "prompt": "After identifying and assessing risk, which responses does the deck list?",
+      "type": "multi-select",
+      "choices": [
+        {
+          "label": "Avoid",
+          "value": "avoid"
+        },
+        {
+          "label": "Transfer",
+          "value": "transfer"
+        },
+        {
+          "label": "Mitigate",
+          "value": "mitigate"
+        },
+        {
+          "label": "Accept/manage residual risk",
+          "value": "accept"
+        }
+      ],
+      "correctAnswer": "avoid,transfer,mitigate,accept",
+      "explanation": "The listed responses are avoid, transfer, mitigate, and accept/manage residual risk. Insurance may be bought for residual risk but is not a replacement for those decisions. Source: Deck 03, slide 22."
+    },
+    {
+      "id": 7,
+      "prompt": "Which is the best example of a transfer of risk in the slides?",
+      "type": "multiple-choice",
+      "choices": [
+        {
+          "label": "Outsourcing payment-card transactions to a third party",
+          "value": "a"
+        },
+        {
+          "label": "Turning off all security controls",
+          "value": "b"
+        },
+        {
+          "label": "Accepting an unassessed risk",
+          "value": "c"
+        },
+        {
+          "label": "Eliminating every asset",
+          "value": "d"
+        }
+      ],
+      "correctAnswer": "a",
+      "explanation": "The deck uses outsourcing payment-card transactions as an example of transferring some risk to a third party. Source: Deck 03, slide 22."
+    },
+    {
+      "id": 8,
+      "prompt": "In the functional security requirements, which term means entities cannot repudiate their actions?",
+      "type": "multiple-choice",
+      "choices": [
+        {
+          "label": "Accountability",
+          "value": "a"
+        },
+        {
+          "label": "Authorization",
+          "value": "b"
+        },
+        {
+          "label": "Availability",
+          "value": "c"
+        },
+        {
+          "label": "Administration",
+          "value": "d"
+        }
+      ],
+      "correctAnswer": "a",
+      "explanation": "Accountability requires entities to be fully accountable for, and unable to repudiate, their actions. Source: Deck 03, slide 25."
+    },
+    {
+      "id": 9,
+      "prompt": "What is a central Zero Trust assumption?",
+      "type": "multiple-choice",
+      "choices": [
+        {
+          "label": "No implicit trust is granted solely because of network location or asset ownership",
+          "value": "a"
+        },
+        {
+          "label": "Internal-network users are trusted by default",
+          "value": "b"
+        },
+        {
+          "label": "A perimeter firewall makes further authorization unnecessary",
+          "value": "c"
+        },
+        {
+          "label": "All resources must be public",
+          "value": "d"
+        }
+      ],
+      "correctAnswer": "a",
+      "explanation": "Zero Trust shifts focus from a static perimeter to users, assets, and resources and rejects location-based implicit trust. Source: Deck 03, slide 29."
+    },
+    {
+      "id": 10,
+      "prompt": "What principle grants an entity only the minimum system resources and authorizations needed to perform its function?",
+      "type": "text",
+      "correctAnswer": "least privilege",
+      "explanation": "Least privilege restricts users or processes to the minimum necessary authorizations and resources. Source: Deck 03, slide 34."
+    },
+    {
+      "id": 11,
+      "prompt": "Which configuration reflects secure defaults?",
+      "type": "multiple-choice",
+      "choices": [
+        {
+          "label": "Require password changes and make unnecessary features or open ports opt-in",
+          "value": "a"
+        },
+        {
+          "label": "Ship default credentials for administrator convenience",
+          "value": "b"
+        },
+        {
+          "label": "Enable all services so users can choose later",
+          "value": "c"
+        },
+        {
+          "label": "Hide the default password in documentation",
+          "value": "d"
+        }
+      ],
+      "correctAnswer": "a",
+      "explanation": "Secure defaults avoid exploitable default credentials and require explicit opt-in for unnecessary features and services. Source: Deck 03, slide 36."
+    },
+    {
+      "id": 12,
+      "prompt": "What does defense in depth mean?",
+      "type": "multiple-choice",
+      "choices": [
+        {
+          "label": "Use multiple, layered countermeasures so one missed attack may be caught by another",
+          "value": "a"
+        },
+        {
+          "label": "Rely on one exceptionally strong control",
+          "value": "b"
+        },
+        {
+          "label": "Hide implementation details as the only control",
+          "value": "c"
+        },
+        {
+          "label": "Put every service on one trusted network",
+          "value": "d"
+        }
+      ],
+      "correctAnswer": "a",
+      "explanation": "Defense in depth layers heterogeneous countermeasures across attack vectors and includes people, technology, and operations. Source: Deck 03, slide 38."
+    },
+    {
+      "id": 13,
+      "prompt": "Which statement about compliance is correct according to the slides?",
+      "type": "multiple-choice",
+      "choices": [
+        {
+          "label": "Being compliant does not necessarily mean being secure",
+          "value": "a"
+        },
+        {
+          "label": "Compliance guarantees perfect security",
+          "value": "b"
+        },
+        {
+          "label": "Security makes all laws unnecessary",
+          "value": "c"
+        },
+        {
+          "label": "Compliance applies only to physical security",
+          "value": "d"
+        }
+      ],
+      "correctAnswer": "a",
+      "explanation": "Laws and regulations can lag threats, so compliance is not equivalent to security. Source: Deck 03, slide 45."
+    },
+    {
+      "id": 14,
+      "prompt": "What is the first rule of cryptography in the slides?",
+      "type": "multiple-choice",
+      "choices": [
+        {
+          "label": "Never develop or use your own cryptography",
+          "value": "a"
+        },
+        {
+          "label": "Always keep the algorithm secret",
+          "value": "b"
+        },
+        {
+          "label": "Use the shortest possible key",
+          "value": "c"
+        },
+        {
+          "label": "Encrypt every message with a public key",
+          "value": "d"
+        }
+      ],
+      "correctAnswer": "a",
+      "explanation": "The deck emphasizes using evaluated modules, standard algorithms, and appropriate secure protocols instead of home-grown cryptography. Source: Deck 04, slide 3."
+    },
+    {
+      "id": 15,
+      "prompt": "What term names the original readable message before encryption?",
+      "type": "text",
+      "correctAnswer": "plaintext",
+      "explanation": "A message before encryption is plaintext, also called cleartext. Source: Deck 04, slide 5."
+    },
+    {
+      "id": 16,
+      "prompt": "Which statement follows Kerckhoffs-style guidance in the deck?",
+      "type": "multiple-choice",
+      "choices": [
+        {
+          "label": "The algorithm should be open, published, and available; keys provide secrecy",
+          "value": "a"
+        },
+        {
+          "label": "The algorithm must be secret but keys may be public",
+          "value": "b"
+        },
+        {
+          "label": "Both algorithm and key must be secret",
+          "value": "c"
+        },
+        {
+          "label": "No key is needed if the algorithm is unpublished",
+          "value": "d"
+        }
+      ],
+      "correctAnswer": "a",
+      "explanation": "Modern ciphers use keys; their algorithms should be open, published, and broadly available. Source: Deck 04, slide 9."
+    },
+    {
+      "id": 17,
+      "prompt": "An attacker has intercepted ciphertext only and attempts to recover plaintext or deduce a key. What attack class is this?",
+      "type": "multiple-choice",
+      "choices": [
+        {
+          "label": "Ciphertext-only",
+          "value": "a"
+        },
+        {
+          "label": "Known-plaintext",
+          "value": "b"
+        },
+        {
+          "label": "Chosen-plaintext",
+          "value": "c"
+        },
+        {
+          "label": "Chosen-ciphertext",
+          "value": "d"
+        }
+      ],
+      "correctAnswer": "a",
+      "explanation": "Ciphertext-only cryptanalysis begins with intercepted ciphertext and aims to recover plaintexts or deduce keys. Source: Deck 04, slide 10."
+    },
+    {
+      "id": 18,
+      "prompt": "Which is the deck’s sole example of unconditional security when properly generated, distributed, and used?",
+      "type": "multiple-choice",
+      "choices": [
+        {
+          "label": "One-time pad",
+          "value": "a"
+        },
+        {
+          "label": "AES",
+          "value": "b"
+        },
+        {
+          "label": "RSA",
+          "value": "c"
+        },
+        {
+          "label": "SHA-3",
+          "value": "d"
+        }
+      ],
+      "correctAnswer": "a",
+      "explanation": "The slides identify the properly used one-time pad as the only example of unconditional security. Source: Deck 04, slide 11."
+    },
+    {
+      "id": 19,
+      "prompt": "What is the purpose of a cryptographic hash?",
+      "type": "multiple-choice",
+      "choices": [
+        {
+          "label": "Produce a fixed-length output from an arbitrary-length input",
+          "value": "a"
+        },
+        {
+          "label": "Recover an input exactly from a digest",
+          "value": "b"
+        },
+        {
+          "label": "Encrypt a message with a shared secret",
+          "value": "c"
+        },
+        {
+          "label": "Hide a message inside an image",
+          "value": "d"
+        }
+      ],
+      "correctAnswer": "a",
+      "explanation": "A one-way hash maps arbitrary-length pre-images to a fixed-length numeric output and should make collisions hard to generate. Source: Deck 04, slide 17."
+    },
+    {
+      "id": 20,
+      "prompt": "Which property does a MAC provide according to the slides?",
+      "type": "multiple-choice",
+      "choices": [
+        {
+          "label": "Message integrity and sender authentication, not confidentiality",
+          "value": "a"
+        },
+        {
+          "label": "Confidentiality only",
+          "value": "b"
+        },
+        {
+          "label": "Availability only",
+          "value": "c"
+        },
+        {
+          "label": "Key escrow",
+          "value": "d"
+        }
+      ],
+      "correctAnswer": "a",
+      "explanation": "The MAC slide explicitly says this is message integrity and authentication, not message confidentiality. Source: Deck 04, slide 18."
+    },
+    {
+      "id": 21,
+      "prompt": "Why do practical hybrid cryptosystems use asymmetric cryptography primarily for session keys?",
+      "type": "multiple-choice",
+      "choices": [
+        {
+          "label": "Asymmetric cryptography is much slower, so symmetric crypto protects message traffic",
+          "value": "a"
+        },
+        {
+          "label": "Symmetric cryptography cannot encrypt messages",
+          "value": "b"
+        },
+        {
+          "label": "Public keys are always secret",
+          "value": "c"
+        },
+        {
+          "label": "Session keys cannot be random",
+          "value": "d"
+        }
+      ],
+      "correctAnswer": "a",
+      "explanation": "Asymmetric crypto is roughly three orders of magnitude slower and is used to protect/distribute session keys; symmetric crypto protects traffic. Source: Deck 04, slide 23."
+    },
+    {
+      "id": 22,
+      "prompt": "A public-key digital signature can provide which properties?",
+      "type": "multi-select",
+      "choices": [
+        {
+          "label": "Origin authentication",
+          "value": "authentication"
+        },
+        {
+          "label": "Integrity",
+          "value": "integrity"
+        },
+        {
+          "label": "Non-repudiation",
+          "value": "nonrepudiation"
+        },
+        {
+          "label": "Confidentiality by itself",
+          "value": "confidentiality"
+        }
+      ],
+      "correctAnswer": "authentication,integrity,nonrepudiation",
+      "explanation": "Public-key signatures provide origin authentication, integrity, and inability to repudiate. Signing alone does not provide confidentiality. Source: Deck 04, slide 28."
+    },
+    {
+      "id": 23,
+      "prompt": "In a PKI, what does a certification authority do to make public keys trustworthy?",
+      "type": "multiple-choice",
+      "choices": [
+        {
+          "label": "Signs public keys or certificates so recipients can verify their integrity and binding",
+          "value": "a"
+        },
+        {
+          "label": "Keeps every user’s private key",
+          "value": "b"
+        },
+        {
+          "label": "Encrypts all application data with one global key",
+          "value": "c"
+        },
+        {
+          "label": "Eliminates the need for authentication",
+          "value": "d"
+        }
+      ],
+      "correctAnswer": "a",
+      "explanation": "A trusted authority signs public keys and participants verify its signature; practical systems bind keys and identity information in certificates. Source: Deck 04, slide 34."
+    },
+    {
+      "id": 24,
+      "prompt": "Why is a password salt stored with the password hash?",
+      "type": "multiple-choice",
+      "choices": [
+        {
+          "label": "It makes dictionary attacks more expensive by varying the input to the public hash",
+          "value": "a"
+        },
+        {
+          "label": "It lets the server decrypt the password",
+          "value": "b"
+        },
+        {
+          "label": "It makes the hash algorithm secret",
+          "value": "c"
+        },
+        {
+          "label": "It replaces the need for a password",
+          "value": "d"
+        }
+      ],
+      "correctAnswer": "a",
+      "explanation": "A random salt is appended before hashing and stored with the resulting hash, increasing the cost of dictionary attacks. Source: Deck 04, slide 44."
+    },
+    {
+      "id": 25,
+      "prompt": "What is a principal advantage of ECC cited in the deck?",
+      "type": "multiple-choice",
+      "choices": [
+        {
+          "label": "Equivalent strength with much smaller keys, helpful for less powerful IoT devices",
+          "value": "a"
+        },
+        {
+          "label": "It requires no key management",
+          "value": "b"
+        },
+        {
+          "label": "It is a symmetric cipher",
+          "value": "c"
+        },
+        {
+          "label": "It is unconditionally secure",
+          "value": "d"
+        }
+      ],
+      "correctAnswer": "a",
+      "explanation": "ECC can deliver equivalent strength with smaller keys, making it faster and suitable for lower-power devices. Source: Deck 04, slide 45."
+    },
+    {
+      "id": 26,
+      "prompt": "KMIP identifies which three primary elements?",
+      "type": "multi-select",
+      "choices": [
+        {
+          "label": "Objects",
+          "value": "objects"
+        },
+        {
+          "label": "Operations",
+          "value": "operations"
+        },
+        {
+          "label": "Attributes",
+          "value": "attributes"
+        },
+        {
+          "label": "Network packets",
+          "value": "packets"
+        }
+      ],
+      "correctAnswer": "objects,operations,attributes",
+      "explanation": "KMIP covers cryptographic objects, actions performed on those objects, and object properties/attributes. Source: Deck 04, slide 46."
+    },
+    {
+      "id": 27,
+      "prompt": "Which technology counters a man-in-the-middle key-exchange attack described in the deck?",
+      "type": "multiple-choice",
+      "choices": [
+        {
+          "label": "Verify digitally signed public-key certificates from a trusted KDC/CA",
+          "value": "a"
+        },
+        {
+          "label": "Use an unsigned public-key directory",
+          "value": "b"
+        },
+        {
+          "label": "Turn off all logging",
+          "value": "c"
+        },
+        {
+          "label": "Use only a longer plaintext message",
+          "value": "d"
+        }
+      ],
+      "correctAnswer": "a",
+      "explanation": "Digital signatures by the KDC/CA let Alice and Bob validate the public keys/certificates and counter the key substitution underlying the attack. Source: Deck 04, slide 43."
+    },
+    {
+      "id": 28,
+      "prompt": "Why is security different from many other software quality attributes?",
+      "type": "multiple-choice",
+      "choices": [
+        {
+          "label": "The complete set of possible vulnerabilities is generally unknown",
+          "value": "a"
+        },
+        {
+          "label": "Security has no requirements",
+          "value": "b"
+        },
+        {
+          "label": "Performance cannot be measured",
+          "value": "c"
+        },
+        {
+          "label": "Security affects only source code",
+          "value": "d"
+        }
+      ],
+      "correctAnswer": "a",
+      "explanation": "Many quality attributes have finite known properties to check; assessing security must contend with an unknown set of possible vulnerabilities. Source: Deck 05, slide 7."
+    },
+    {
+      "id": 29,
+      "prompt": "Which analysis verifies properties by examining implementation logic without executing the software?",
+      "type": "multiple-choice",
+      "choices": [
+        {
+          "label": "Static program analysis",
+          "value": "a"
+        },
+        {
+          "label": "Dynamic program analysis",
+          "value": "b"
+        },
+        {
+          "label": "Adaptive mechanisms",
+          "value": "c"
+        },
+        {
+          "label": "Penetration testing only",
+          "value": "d"
+        }
+      ],
+      "correctAnswer": "a",
+      "explanation": "Static analysis examines implementation logic without executing the system. Source: Deck 05, slide 9."
+    },
+    {
+      "id": 30,
+      "prompt": "Which approach verifies properties through execution and runtime data collection?",
+      "type": "multiple-choice",
+      "choices": [
+        {
+          "label": "Dynamic program analysis",
+          "value": "a"
+        },
+        {
+          "label": "Static program analysis",
+          "value": "b"
+        },
+        {
+          "label": "Formal verification only",
+          "value": "c"
+        },
+        {
+          "label": "Architecture decomposition",
+          "value": "d"
+        }
+      ],
+      "correctAnswer": "a",
+      "explanation": "Dynamic program analysis relies on execution and collection of runtime data. Source: Deck 05, slide 10."
+    },
+    {
+      "id": 31,
+      "prompt": "Which approach can provide certain guarantees through mathematically sound and complete methods?",
+      "type": "multiple-choice",
+      "choices": [
+        {
+          "label": "Formal verification",
+          "value": "a"
+        },
+        {
+          "label": "Fuzzing",
+          "value": "b"
+        },
+        {
+          "label": "Network segmentation",
+          "value": "c"
+        },
+        {
+          "label": "Role mining",
+          "value": "d"
+        }
+      ],
+      "correctAnswer": "a",
+      "explanation": "Formal verification uses mathematically sound and complete methods that can provide certain guarantees. Source: Deck 05, slide 11."
+    },
+    {
+      "id": 32,
+      "prompt": "A running system monitors for an attack and applies a mitigation or patch at runtime. This is an example of what?",
+      "type": "multiple-choice",
+      "choices": [
+        {
+          "label": "Adaptive mechanisms",
+          "value": "a"
+        },
+        {
+          "label": "Static analysis",
+          "value": "b"
+        },
+        {
+          "label": "A ciphertext-only attack",
+          "value": "c"
+        },
+        {
+          "label": "Mandatory access control",
+          "value": "d"
+        }
+      ],
+      "correctAnswer": "a",
+      "explanation": "Adaptive mechanisms monitor at runtime and can recover from attacks or patch vulnerabilities at runtime. Source: Deck 05, slide 12."
+    },
+    {
+      "id": 33,
+      "prompt": "In the analysis deck, what is the realization of a threat called?",
+      "type": "multiple-choice",
+      "choices": [
+        {
+          "label": "An attack",
+          "value": "a"
+        },
+        {
+          "label": "An asset",
+          "value": "b"
+        },
+        {
+          "label": "A control",
+          "value": "c"
+        },
+        {
+          "label": "A requirement",
+          "value": "d"
+        }
+      ],
+      "correctAnswer": "a",
+      "explanation": "A threat is a potential event that can compromise a requirement; its realization is an attack. Source: Deck 05, slide 16."
+    },
+    {
+      "id": 34,
+      "prompt": "Which six high-level security engineering tasks are listed?",
+      "type": "multi-select",
+      "choices": [
+        {
+          "label": "Security requirements",
+          "value": "requirements"
+        },
+        {
+          "label": "Threat modeling",
+          "value": "threatmodeling"
+        },
+        {
+          "label": "Security architecture",
+          "value": "architecture"
+        },
+        {
+          "label": "Validation and verification",
+          "value": "vv"
+        },
+        {
+          "label": "Penetration testing",
+          "value": "pentesting"
+        },
+        {
+          "label": "Software patching",
+          "value": "patching"
+        }
+      ],
+      "correctAnswer": "requirements,threatmodeling,architecture,vv,pentesting,patching",
+      "explanation": "The slides list all six as security-focused activities across the development lifecycle. Source: Deck 05, slide 18."
+    },
+    {
+      "id": 35,
+      "prompt": "What is the first step in Microsoft’s six-step application threat-modeling process?",
+      "type": "text",
+      "correctAnswer": "identify assets",
+      "explanation": "The first step is to identify the valuable assets the system must protect. Source: Deck 05, slide 36."
+    },
+    {
+      "id": 36,
+      "prompt": "What should an architecture overview document during threat modeling?",
+      "type": "multiple-choice",
+      "choices": [
+        {
+          "label": "Subsystems, trust boundaries, and data flow",
+          "value": "a"
+        },
+        {
+          "label": "Only user-interface colors",
+          "value": "b"
+        },
+        {
+          "label": "Only source-file names",
+          "value": "c"
+        },
+        {
+          "label": "Only the final penetration-test report",
+          "value": "d"
+        }
+      ],
+      "correctAnswer": "a",
+      "explanation": "The architecture overview uses diagrams/tables for subsystems, trust boundaries, and data flow. Source: Deck 05, slide 37."
+    },
+    {
+      "id": 37,
+      "prompt": "What are the three security-architecture concerns in the slides?",
+      "type": "multiple-choice",
+      "choices": [
+        {
+          "label": "Protection, detection, and recovery",
+          "value": "a"
+        },
+        {
+          "label": "Confidentiality, performance, and cost",
+          "value": "b"
+        },
+        {
+          "label": "Scanning, encryption, and compliance",
+          "value": "c"
+        },
+        {
+          "label": "People, product, and profit",
+          "value": "d"
+        }
+      ],
+      "correctAnswer": "a",
+      "explanation": "Security solutions in the architecture are organized around protection, detection, and recovery. Source: Deck 06, slide 28."
+    },
+    {
+      "id": 38,
+      "prompt": "Which access-control concept belongs to the protection category?",
+      "type": "multiple-choice",
+      "choices": [
+        {
+          "label": "Authorization, accountability, and non-repudiation",
+          "value": "a"
+        },
+        {
+          "label": "Restoring a damaged system",
+          "value": "b"
+        },
+        {
+          "label": "Monitoring a manifestation of a threat",
+          "value": "c"
+        },
+        {
+          "label": "Writing a public vulnerability report",
+          "value": "d"
+        }
+      ],
+      "correctAnswer": "a",
+      "explanation": "The deck places access-control mechanisms under protection and ties them to authorization, accountability, and non-repudiation. Source: Deck 06, slide 31."
+    },
+    {
+      "id": 39,
+      "prompt": "A scanner flags a vulnerability that cannot actually be exploited. What is this?",
+      "type": "multiple-choice",
+      "choices": [
+        {
+          "label": "False positive",
+          "value": "a"
+        },
+        {
+          "label": "False negative",
+          "value": "b"
+        },
+        {
+          "label": "Threat realization",
+          "value": "c"
+        },
+        {
+          "label": "Formal proof",
+          "value": "d"
+        }
+      ],
+      "correctAnswer": "a",
+      "explanation": "A false positive is a vulnerability flagged in code that is not exploitable. Source: Deck 06, slide 41."
+    },
+    {
+      "id": 40,
+      "prompt": "Why do static analysis techniques tend to produce false positives?",
+      "type": "multiple-choice",
+      "choices": [
+        {
+          "label": "They over-approximate software behavior",
+          "value": "a"
+        },
+        {
+          "label": "They execute too few test cases",
+          "value": "b"
+        },
+        {
+          "label": "They always use random input",
+          "value": "c"
+        },
+        {
+          "label": "They require no implementation logic",
+          "value": "d"
+        }
+      ],
+      "correctAnswer": "a",
+      "explanation": "The slides say static analysis tends to over-approximate behavior and therefore tends toward false positives. Source: Deck 06, slide 45."
+    },
+    {
+      "id": 41,
+      "prompt": "Why do dynamic analysis techniques tend to produce false negatives?",
+      "type": "multiple-choice",
+      "choices": [
+        {
+          "label": "They under-approximate software behavior",
+          "value": "a"
+        },
+        {
+          "label": "They analyze every possible execution",
+          "value": "b"
+        },
+        {
+          "label": "They do not run the system",
+          "value": "c"
+        },
+        {
+          "label": "They always produce formal guarantees",
+          "value": "d"
+        }
+      ],
+      "correctAnswer": "a",
+      "explanation": "Dynamic analysis observes only executions it exercises, so it under-approximates behavior and tends toward false negatives. Source: Deck 06, slide 47."
+    },
+    {
+      "id": 42,
+      "prompt": "Which penetration-testing approach gives test generation information about design and implementation?",
+      "type": "multiple-choice",
+      "choices": [
+        {
+          "label": "White-box penetration testing",
+          "value": "a"
+        },
+        {
+          "label": "Black-box penetration testing",
+          "value": "b"
+        },
+        {
+          "label": "Blind backup testing",
+          "value": "c"
+        },
+        {
+          "label": "Passive DNS",
+          "value": "d"
+        }
+      ],
+      "correctAnswer": "a",
+      "explanation": "White-box testing uses design and implementation information; black-box testing is limited to information essentially available to an attacker. Source: Deck 06, slide 54."
+    },
+    {
+      "id": 43,
+      "prompt": "What does fuzzing do?",
+      "type": "multiple-choice",
+      "choices": [
+        {
+          "label": "Feeds public interfaces random, semi-random, and malformed inputs rapidly",
+          "value": "a"
+        },
+        {
+          "label": "Proves code mathematically correct",
+          "value": "b"
+        },
+        {
+          "label": "Encrypts database rows",
+          "value": "c"
+        },
+        {
+          "label": "Assigns users to roles",
+          "value": "d"
+        }
+      ],
+      "correctAnswer": "a",
+      "explanation": "Fuzzing rapidly exercises public interfaces with random, semi-random, and malformed inputs. Source: Deck 06, slide 57."
+    },
+    {
+      "id": 44,
+      "prompt": "Which statement correctly distinguishes identification from authentication?",
+      "type": "multiple-choice",
+      "choices": [
+        {
+          "label": "Identification uniquely names an entity; authentication proves the asserted identity is genuine",
+          "value": "a"
+        },
+        {
+          "label": "Identification grants permissions; authentication revokes them",
+          "value": "b"
+        },
+        {
+          "label": "Identification encrypts data; authentication decrypts it",
+          "value": "c"
+        },
+        {
+          "label": "They have identical meanings",
+          "value": "d"
+        }
+      ],
+      "correctAnswer": "a",
+      "explanation": "Identification uniquely identifies an entity, while authentication proves the claimed identity. Source: Deck 07, slide 5."
+    },
+    {
+      "id": 45,
+      "prompt": "Why does the deck call user ID plus password the weakest common authentication method?",
+      "type": "multiple-choice",
+      "choices": [
+        {
+          "label": "It is single-factor authentication based on something known and is commonly exposed, guessed, or cracked",
+          "value": "a"
+        },
+        {
+          "label": "It uses too many independent factors",
+          "value": "b"
+        },
+        {
+          "label": "It never needs a server",
+          "value": "c"
+        },
+        {
+          "label": "It is based on a private key",
+          "value": "d"
+        }
+      ],
+      "correctAnswer": "a",
+      "explanation": "User ID plus password is the common something-you-know single factor and is vulnerable to exposure and guessing/cracking. Source: Deck 07, slide 6."
+    },
+    {
+      "id": 46,
+      "prompt": "What cryptographic model underlies passkeys?",
+      "type": "multiple-choice",
+      "choices": [
+        {
+          "label": "A public/private key-pair asymmetric cryptosystem",
+          "value": "a"
+        },
+        {
+          "label": "A shared password database",
+          "value": "b"
+        },
+        {
+          "label": "A plaintext SMS-only credential",
+          "value": "c"
+        },
+        {
+          "label": "A one-time pad",
+          "value": "d"
+        }
+      ],
+      "correctAnswer": "a",
+      "explanation": "The slides describe passkeys as based on public/private key-pair asymmetric cryptography and foundational WebAuthn/FIDO technology. Source: Deck 07, slide 8."
+    },
+    {
+      "id": 47,
+      "prompt": "Which are MFA factor categories named in the slides?",
+      "type": "multi-select",
+      "choices": [
+        {
+          "label": "Something you know",
+          "value": "know"
+        },
+        {
+          "label": "Something you have/use",
+          "value": "have"
+        },
+        {
+          "label": "Something you are",
+          "value": "are"
+        },
+        {
+          "label": "Something you prefer",
+          "value": "prefer"
+        }
+      ],
+      "correctAnswer": "know,have,are",
+      "explanation": "MFA combines categories such as knowledge, possession/use, and biometrics. Source: Deck 07, slide 10."
+    },
+    {
+      "id": 48,
+      "prompt": "Why are SMS and email one-time passwords considered weaker than some other MFA methods?",
+      "type": "multiple-choice",
+      "choices": [
+        {
+          "label": "They can be intercepted or viewed, face device malware/spoofing risks, and need connectivity",
+          "value": "a"
+        },
+        {
+          "label": "They require an HSM for every login",
+          "value": "b"
+        },
+        {
+          "label": "They make phishing impossible",
+          "value": "c"
+        },
+        {
+          "label": "They are a biometric factor",
+          "value": "d"
+        }
+      ],
+      "correctAnswer": "a",
+      "explanation": "The deck notes interception, malware, spoofing/account hijack, and connectivity drawbacks, while still calling them better than password-only SFA. Source: Deck 07, slide 11."
+    },
+    {
+      "id": 49,
+      "prompt": "What does WebAuthn provide in FIDO2?",
+      "type": "multiple-choice",
+      "choices": [
+        {
+          "label": "A standard browser/platform web API for FIDO authentication",
+          "value": "a"
+        },
+        {
+          "label": "A DNS encryption protocol",
+          "value": "b"
+        },
+        {
+          "label": "A database tokenization vault",
+          "value": "c"
+        },
+        {
+          "label": "A network firewall rule language",
+          "value": "d"
+        }
+      ],
+      "correctAnswer": "a",
+      "explanation": "WebAuthn is the W3C standard web API built into browsers and platforms for FIDO authentication. Source: Deck 07, slide 16."
+    },
+    {
+      "id": 50,
+      "prompt": "How should biometric data be handled according to the slides?",
+      "type": "multiple-choice",
+      "choices": [
+        {
+          "label": "Do not transmit/store raw biometrics; generate biometric hashes locally where possible",
+          "value": "a"
+        },
+        {
+          "label": "Store raw biometric recordings in a public database",
+          "value": "b"
+        },
+        {
+          "label": "Use raw biometrics as a reusable password",
+          "value": "c"
+        },
+        {
+          "label": "Never account for false positives or negatives",
+          "value": "d"
+        }
+      ],
+      "correctAnswer": "a",
+      "explanation": "Raw biometrics should not be transmitted/stored; registration generates biometric hashes, ideally in a small local TCB. Source: Deck 07, slide 21."
+    },
+    {
+      "id": 51,
+      "prompt": "In access control, what is a subject?",
+      "type": "multiple-choice",
+      "choices": [
+        {
+          "label": "An active entity that interacts with a passive object",
+          "value": "a"
+        },
+        {
+          "label": "A passive file or database",
+          "value": "b"
+        },
+        {
+          "label": "A list of firewall rules",
+          "value": "c"
+        },
+        {
+          "label": "A log entry only",
+          "value": "d"
+        }
+      ],
+      "correctAnswer": "a",
+      "explanation": "Subjects are active entities such as users, software, or hardware; objects are passive targets such as files, databases, and devices. Source: Deck 07, slide 27."
+    },
+    {
+      "id": 52,
+      "prompt": "What are privileges in the deck’s terminology?",
+      "type": "multiple-choice",
+      "choices": [
+        {
+          "label": "The union of rights and permissions",
+          "value": "a"
+        },
+        {
+          "label": "Only file-read permissions",
+          "value": "b"
+        },
+        {
+          "label": "A type of biometric template",
+          "value": "c"
+        },
+        {
+          "label": "A public-key certificate",
+          "value": "d"
+        }
+      ],
+      "correctAnswer": "a",
+      "explanation": "Permissions grant access on objects and rights allow actions outside permissions; privileges are their union. Source: Deck 07, slide 28."
+    },
+    {
+      "id": 53,
+      "prompt": "Which are the three primary access-control types in the deck?",
+      "type": "multi-select",
+      "choices": [
+        {
+          "label": "Preventative",
+          "value": "preventative"
+        },
+        {
+          "label": "Detective",
+          "value": "detective"
+        },
+        {
+          "label": "Corrective",
+          "value": "corrective"
+        },
+        {
+          "label": "Predictive",
+          "value": "predictive"
+        }
+      ],
+      "correctAnswer": "preventative,detective,corrective",
+      "explanation": "Preventative controls stop unauthorized actions, detective controls discover them, and corrective controls return systems to an acceptable state. Source: Deck 07, slide 32."
+    },
+    {
+      "id": 54,
+      "prompt": "Who controls access in discretionary access control (DAC)?",
+      "type": "multiple-choice",
+      "choices": [
+        {
+          "label": "The object owner, who can grant, change, or revoke permissions",
+          "value": "a"
+        },
+        {
+          "label": "A mandatory hierarchical label only",
+          "value": "b"
+        },
+        {
+          "label": "A real-time geolocation engine only",
+          "value": "c"
+        },
+        {
+          "label": "A certification authority",
+          "value": "d"
+        }
+      ],
+      "correctAnswer": "a",
+      "explanation": "DAC lets object owners control access to users or groups and administer permission changes. Source: Deck 07, slide 36."
+    },
+    {
+      "id": 55,
+      "prompt": "Under mandatory access control (MAC), what must hold for an operation to proceed?",
+      "type": "multiple-choice",
+      "choices": [
+        {
+          "label": "The subject clearance must dominate the object sensitivity label",
+          "value": "a"
+        },
+        {
+          "label": "The object owner must personally approve every request",
+          "value": "b"
+        },
+        {
+          "label": "The user must have only one role",
+          "value": "c"
+        },
+        {
+          "label": "The endpoint must be on public Wi-Fi",
+          "value": "d"
+        }
+      ],
+      "correctAnswer": "a",
+      "explanation": "MAC uses subject clearance C and object sensitivity L; C must dominate L, with no read-up and no write-down in the stated model. Source: Deck 07, slide 37."
+    },
+    {
+      "id": 56,
+      "prompt": "Which Bell-LaPadula rule protects confidentiality?",
+      "type": "multiple-choice",
+      "choices": [
+        {
+          "label": "No read-up and no write-down",
+          "value": "a"
+        },
+        {
+          "label": "No read-down and no write-up",
+          "value": "b"
+        },
+        {
+          "label": "Read any label after login",
+          "value": "c"
+        },
+        {
+          "label": "Write any label after hashing",
+          "value": "d"
+        }
+      ],
+      "correctAnswer": "a",
+      "explanation": "Bell-LaPadula’s simple property forbids read-up and its star property forbids write-down to preserve confidentiality. Source: Deck 07, slide 38."
+    },
+    {
+      "id": 57,
+      "prompt": "Which Biba rule protects integrity?",
+      "type": "multiple-choice",
+      "choices": [
+        {
+          "label": "No read-down and no write-up",
+          "value": "a"
+        },
+        {
+          "label": "No read-up and no write-down",
+          "value": "b"
+        },
+        {
+          "label": "No encryption and no logging",
+          "value": "c"
+        },
+        {
+          "label": "No authentication and no authorization",
+          "value": "d"
+        }
+      ],
+      "correctAnswer": "a",
+      "explanation": "Biba prevents a subject from being corrupted by lower-integrity input (no read-down) and from modifying higher-integrity objects (no write-up). Source: Deck 07, slide 39."
+    },
+    {
+      "id": 58,
+      "prompt": "What problem does the Brewer-Nash (Chinese Wall) model address?",
+      "type": "multiple-choice",
+      "choices": [
+        {
+          "label": "Conflicts of interest based on a subject’s previous access",
+          "value": "a"
+        },
+        {
+          "label": "Disk encryption performance",
+          "value": "b"
+        },
+        {
+          "label": "DDoS bandwidth exhaustion",
+          "value": "c"
+        },
+        {
+          "label": "Password hashing",
+          "value": "d"
+        }
+      ],
+      "correctAnswer": "a",
+      "explanation": "Brewer-Nash prevents conflict-of-interest access, using dynamic controls based on prior actions. Source: Deck 07, slide 41."
+    },
+    {
+      "id": 59,
+      "prompt": "What additional inputs can ABAC use beyond subject and object information?",
+      "type": "multiple-choice",
+      "choices": [
+        {
+          "label": "Context such as endpoint geolocation, time window, and endpoint health",
+          "value": "a"
+        },
+        {
+          "label": "Only a fixed owner-selected ACL",
+          "value": "b"
+        },
+        {
+          "label": "Only a public-key certificate",
+          "value": "c"
+        },
+        {
+          "label": "Only a user’s password length",
+          "value": "d"
+        }
+      ],
+      "correctAnswer": "a",
+      "explanation": "ABAC can apply real-time contextual information and support granular responses such as step-up authentication or reduced access. Source: Deck 07, slide 48."
+    },
+    {
+      "id": 60,
+      "prompt": "What is the semantic distinction between identity management and identity governance in the course slides?",
+      "type": "multiple-choice",
+      "choices": [
+        {
+          "label": "Identity management handles accounts, lifecycle, provisioning, roles, and password policy; governance handles access requests/reviews, entitlement creep, SoD, role optimization, and risk analytics",
+          "value": "a"
+        },
+        {
+          "label": "They are exactly the same function",
+          "value": "b"
+        },
+        {
+          "label": "Governance only creates passwords; management only audits access",
+          "value": "c"
+        },
+        {
+          "label": "Management is physical access only; governance is encryption only",
+          "value": "d"
+        }
+      ],
+      "correctAnswer": "a",
+      "explanation": "The deck explicitly contrasts operational identity-management functions with governance functions that prove and review appropriate access. Source: Deck 07, slide 61."
+    },
+    {
+      "id": 61,
+      "prompt": "How do PAM solutions reduce the privileged-identity management problem from P × T toward P + T?",
+      "type": "multiple-choice",
+      "choices": [
+        {
+          "label": "Use a hardened credential vault with checkout/in/rotation and hardened logging",
+          "value": "a"
+        },
+        {
+          "label": "Give every privileged user a shared permanent password",
+          "value": "b"
+        },
+        {
+          "label": "Eliminate authentication for administrators",
+          "value": "c"
+        },
+        {
+          "label": "Store credentials in scripts and stash files",
+          "value": "d"
+        }
+      ],
+      "correctAnswer": "a",
+      "explanation": "PAM discovers accounts, uses a hardened vault, checks credentials out/in with rotation, and logs actions, reducing the combinatorial credential burden. Source: Deck 07, slide 73."
+    },
+    {
+      "id": 62,
+      "prompt": "Name the three data-security risk-management stages in order: discover, classify, and _____.",
+      "type": "text",
+      "correctAnswer": "protect",
+      "explanation": "The slides present the three stages as discover, classify, and protect. Source: Deck 11, slide 14."
+    },
+    {
+      "id": 63,
+      "prompt": "Why is discovery foundational to data protection?",
+      "type": "multiple-choice",
+      "choices": [
+        {
+          "label": "Data that cannot be found cannot be protected",
+          "value": "a"
+        },
+        {
+          "label": "Discovery automatically encrypts data",
+          "value": "b"
+        },
+        {
+          "label": "Discovery eliminates classification",
+          "value": "c"
+        },
+        {
+          "label": "Discovery replaces backups",
+          "value": "d"
+        }
+      ],
+      "correctAnswer": "a",
+      "explanation": "The deck stresses that data is everywhere and says directly: if you cannot find it, you cannot protect it. Source: Deck 11, slide 15."
+    },
+    {
+      "id": 64,
+      "prompt": "Which statement correctly relates privacy and confidentiality?",
+      "type": "multiple-choice",
+      "choices": [
+        {
+          "label": "You can have confidentiality without privacy, but not privacy without confidentiality",
+          "value": "a"
+        },
+        {
+          "label": "Privacy and confidentiality are identical",
+          "value": "b"
+        },
+        {
+          "label": "Privacy requires no security controls",
+          "value": "c"
+        },
+        {
+          "label": "Confidentiality is possible only for public data",
+          "value": "d"
+        }
+      ],
+      "correctAnswer": "a",
+      "explanation": "The mitigation slide makes this exact distinction. Source: Deck 11, slide 16."
+    },
+    {
+      "id": 65,
+      "prompt": "What security capability must accompany media encryption for it to be dependable at scale?",
+      "type": "multiple-choice",
+      "choices": [
+        {
+          "label": "Robust, scalable cryptographic key management",
+          "value": "a"
+        },
+        {
+          "label": "A shorter password policy",
+          "value": "b"
+        },
+        {
+          "label": "A public file share",
+          "value": "c"
+        },
+        {
+          "label": "A slower network link",
+          "value": "d"
+        }
+      ],
+      "correctAnswer": "a",
+      "explanation": "Media encryption relies on robust, scalable cryptographic key management. Source: Deck 11, slide 17."
+    },
+    {
+      "id": 66,
+      "prompt": "Which best describes hardening?",
+      "type": "multiple-choice",
+      "choices": [
+        {
+          "label": "Locking down systems with secure configuration, current patches, and disabled unneeded services/functions",
+          "value": "a"
+        },
+        {
+          "label": "Adding every available service for flexibility",
+          "value": "b"
+        },
+        {
+          "label": "Only encrypting a database column",
+          "value": "c"
+        },
+        {
+          "label": "Deleting all audit logs",
+          "value": "d"
+        }
+      ],
+      "correctAnswer": "a",
+      "explanation": "Hardening uses secure settings, patching, and disables unneeded protocols, services, and functionality. Source: Deck 11, slide 19."
+    },
+    {
+      "id": 67,
+      "prompt": "Which functions can an external database reference monitor provide?",
+      "type": "multi-select",
+      "choices": [
+        {
+          "label": "Data discovery/classification",
+          "value": "discovery"
+        },
+        {
+          "label": "Static or dynamic masking/tokenization",
+          "value": "masking"
+        },
+        {
+          "label": "SQL injection detection/prevention",
+          "value": "sqli"
+        },
+        {
+          "label": "Secure logs difficult for DBAs to alter",
+          "value": "securelog"
+        }
+      ],
+      "correctAnswer": "discovery,masking,sqli,securelog",
+      "explanation": "The deck lists these functions alongside SoD controls, alerts, vulnerability scanning, and activity monitoring. Source: Deck 11, slide 21."
+    },
+    {
+      "id": 68,
+      "prompt": "In tokenization, where is the relationship between the original card number and the token stored?",
+      "type": "multiple-choice",
+      "choices": [
+        {
+          "label": "In a separate vault",
+          "value": "a"
+        },
+        {
+          "label": "In the customer’s browser history",
+          "value": "b"
+        },
+        {
+          "label": "In the merchant’s public source code",
+          "value": "c"
+        },
+        {
+          "label": "It is not stored anywhere",
+          "value": "d"
+        }
+      ],
+      "correctAnswer": "a",
+      "explanation": "The workflow replaces the card number with a token while storing their relationship separately in a vault. Source: Deck 11, slide 24."
+    },
+    {
+      "id": 69,
+      "prompt": "What is DLP intended to detect and prevent?",
+      "type": "multiple-choice",
+      "choices": [
+        {
+          "label": "Exfiltration, modification, and/or destruction of important data",
+          "value": "a"
+        },
+        {
+          "label": "Only encryption-key generation",
+          "value": "b"
+        },
+        {
+          "label": "Only operating-system patching",
+          "value": "c"
+        },
+        {
+          "label": "Only password resets",
+          "value": "d"
+        }
+      ],
+      "correctAnswer": "a",
+      "explanation": "Data Loss Prevention seeks to detect and prevent loss through exfiltration, modification, or destruction. Source: Deck 11, slide 27."
+    },
+    {
+      "id": 70,
+      "prompt": "Why must restore processes be tested and validated?",
+      "type": "multiple-choice",
+      "choices": [
+        {
+          "label": "Backups cannot support recovery if restoration fails when needed",
+          "value": "a"
+        },
+        {
+          "label": "Testing automatically creates a hot standby",
+          "value": "b"
+        },
+        {
+          "label": "Backups only protect confidentiality",
+          "value": "c"
+        },
+        {
+          "label": "Restore testing removes the need for incident response",
+          "value": "d"
+        }
+      ],
+      "correctAnswer": "a",
+      "explanation": "Backups are key to incident response and availability, but the slides warn that restore processes are sometimes not tested or validated. Source: Deck 11, slide 28."
+    },
+    {
+      "id": 71,
+      "prompt": "What is the order of NIST media sanitization levels shown in the deck?",
+      "type": "multiple-choice",
+      "choices": [
+        {
+          "label": "CLEAR < PURGE < DESTROY",
+          "value": "a"
+        },
+        {
+          "label": "DESTROY < CLEAR < PURGE",
+          "value": "b"
+        },
+        {
+          "label": "PURGE < CLEAR < DESTROY",
+          "value": "c"
+        },
+        {
+          "label": "CLEAR < DESTROY < PURGE",
+          "value": "d"
+        }
+      ],
+      "correctAnswer": "a",
+      "explanation": "The slide presents the increasing sanitization scale as CLEAR, then PURGE, then DESTROY. Source: Deck 11, slide 30."
+    },
+    {
+      "id": 72,
+      "prompt": "What should an application do with user-uploaded files before intended use?",
+      "type": "multiple-choice",
+      "choices": [
+        {
+          "label": "Control format/name/location and sandbox or quarantine files for malicious-content scanning",
+          "value": "a"
+        },
+        {
+          "label": "Execute them to check whether they work",
+          "value": "b"
+        },
+        {
+          "label": "Trust any file extension",
+          "value": "c"
+        },
+        {
+          "label": "Store them in a shared executable directory",
+          "value": "d"
+        }
+      ],
+      "correctAnswer": "a",
+      "explanation": "The deck requires format and naming control, sandboxing/quarantine, scanning, and ensuring uploads are never executed. Source: Deck 11, slide 32."
+    },
+    {
+      "id": 73,
+      "prompt": "Which are OECD Fair Information Practice principles in the slides?",
+      "type": "multi-select",
+      "choices": [
+        {
+          "label": "Collection limitation",
+          "value": "collection"
+        },
+        {
+          "label": "Data quality",
+          "value": "quality"
+        },
+        {
+          "label": "Purpose specification",
+          "value": "purpose"
+        },
+        {
+          "label": "Use limitation",
+          "value": "use"
+        }
+      ],
+      "correctAnswer": "collection,quality,purpose,use",
+      "explanation": "These four appear on the first OECD Fair Information Practices slide; safeguards, openness, participation, and accountability follow on the next slide. Source: Deck 11, slide 36."
+    },
+    {
+      "id": 74,
+      "prompt": "Under GDPR, who decides why and how personal data will be processed?",
+      "type": "multiple-choice",
+      "choices": [
+        {
+          "label": "The data controller",
+          "value": "a"
+        },
+        {
+          "label": "The data processor only",
+          "value": "b"
+        },
+        {
+          "label": "The data subject",
+          "value": "c"
+        },
+        {
+          "label": "The certificate authority",
+          "value": "d"
+        }
+      ],
+      "correctAnswer": "a",
+      "explanation": "The controller decides why and how processing occurs; a processor handles data on the controller’s behalf. Source: Deck 11, slide 39."
+    },
+    {
+      "id": 75,
+      "prompt": "What does a denial-of-service attack threaten by consuming a finite resource?",
+      "type": "multiple-choice",
+      "choices": [
+        {
+          "label": "Availability",
+          "value": "a"
+        },
+        {
+          "label": "Confidentiality",
+          "value": "b"
+        },
+        {
+          "label": "Non-repudiation",
+          "value": "c"
+        },
+        {
+          "label": "Identity proofing",
+          "value": "d"
+        }
+      ],
+      "correctAnswer": "a",
+      "explanation": "DoS threatens availability by consuming resources and slowing, crashing, or freezing services. Source: Deck 12, slide 8."
+    },
+    {
+      "id": 76,
+      "prompt": "How does a DDoS attack differ from a DoS attack?",
+      "type": "multiple-choice",
+      "choices": [
+        {
+          "label": "It uses many networked devices in a coordinated attack",
+          "value": "a"
+        },
+        {
+          "label": "It can only target DNS",
+          "value": "b"
+        },
+        {
+          "label": "It always uses a single endpoint",
+          "value": "c"
+        },
+        {
+          "label": "It encrypts data at rest",
+          "value": "d"
+        }
+      ],
+      "correctAnswer": "a",
+      "explanation": "A DDoS attack coordinates many devices against targets, with Mirai offered as an example. Source: Deck 12, slide 9."
+    },
+    {
+      "id": 77,
+      "prompt": "Which countermeasures for DoS/DDoS are listed?",
+      "type": "multi-select",
+      "choices": [
+        {
+          "label": "Scan and patch endpoints/infrastructure",
+          "value": "patch"
+        },
+        {
+          "label": "Disable unused services",
+          "value": "asr"
+        },
+        {
+          "label": "Rate-limit or throttle requests",
+          "value": "ratelimit"
+        },
+        {
+          "label": "Require strong authentication and PAM for remote administrators",
+          "value": "pam"
+        }
+      ],
+      "correctAnswer": "patch,asr,ratelimit,pam",
+      "explanation": "The deck lists discovery/patching, attack-surface reduction, strong authentication/PAM, sound network design, throttling, graceful degradation, and specialist protection. Source: Deck 12, slide 10."
+    },
+    {
+      "id": 78,
+      "prompt": "What two protections does DNSSEC add according to the slides?",
+      "type": "multiple-choice",
+      "choices": [
+        {
+          "label": "Data-origin authentication and data-integrity protection",
+          "value": "a"
+        },
+        {
+          "label": "Data confidentiality and DDoS immunity",
+          "value": "b"
+        },
+        {
+          "label": "Password hashing and endpoint patching",
+          "value": "c"
+        },
+        {
+          "label": "Network address translation and port filtering",
+          "value": "d"
+        }
+      ],
+      "correctAnswer": "a",
+      "explanation": "DNSSEC signs DNS data, allowing resolvers to verify origin and detect in-transit modification. Source: Deck 12, slide 13."
+    },
+    {
+      "id": 79,
+      "prompt": "What is the principal purpose of DoH and DoT?",
+      "type": "multiple-choice",
+      "choices": [
+        {
+          "label": "Reduce DNS eavesdropping and manipulation by using HTTPS or TLS for remote resolution",
+          "value": "a"
+        },
+        {
+          "label": "Replace all DNS names with IP addresses",
+          "value": "b"
+        },
+        {
+          "label": "Digitally sign zone data",
+          "value": "c"
+        },
+        {
+          "label": "Map private addresses to public addresses",
+          "value": "d"
+        }
+      ],
+      "correctAnswer": "a",
+      "explanation": "DoH uses HTTPS and DoT uses TLS directly to protect remote DNS resolution from eavesdropping and MITM manipulation. Source: Deck 12, slide 14."
+    },
+    {
+      "id": 80,
+      "prompt": "What is NAT’s original purpose?",
+      "type": "multiple-choice",
+      "choices": [
+        {
+          "label": "Conserving limited IPv4 addresses",
+          "value": "a"
+        },
+        {
+          "label": "Providing complete network security",
+          "value": "b"
+        },
+        {
+          "label": "Signing DNS records",
+          "value": "c"
+        },
+        {
+          "label": "Detecting malware",
+          "value": "d"
+        }
+      ],
+      "correctAnswer": "a",
+      "explanation": "NAT was originally for address conservation; it can bring side benefits but is not primarily a security control. Source: Deck 12, slide 20."
+    },
+    {
+      "id": 81,
+      "prompt": "Which IPSec property lets higher layers gain its protections automatically?",
+      "type": "multiple-choice",
+      "choices": [
+        {
+          "label": "It operates at the Network/Internet layer",
+          "value": "a"
+        },
+        {
+          "label": "It operates only in application code",
+          "value": "b"
+        },
+        {
+          "label": "It operates only on physical media",
+          "value": "c"
+        },
+        {
+          "label": "It uses no security association",
+          "value": "d"
+        }
+      ],
+      "correctAnswer": "a",
+      "explanation": "IPSec works at the Network/Internet layer and supplies authentication, integrity, confidentiality, and anti-replay benefits upward. Source: Deck 12, slide 21."
+    },
+    {
+      "id": 82,
+      "prompt": "What does Network Access Control (NAC) do before a device joins a network?",
+      "type": "multiple-choice",
+      "choices": [
+        {
+          "label": "Evaluates endpoint security state and can block, quarantine, or reduce access until compliant",
+          "value": "a"
+        },
+        {
+          "label": "Assigns every device administrator rights",
+          "value": "b"
+        },
+        {
+          "label": "Encrypts every database backup",
+          "value": "c"
+        },
+        {
+          "label": "Eliminates the need for a guest network",
+          "value": "d"
+        }
+      ],
+      "correctAnswer": "a",
+      "explanation": "NAC scans/assesses connecting endpoints and enforces policy by blocking, quarantining, or limiting noncompliant devices. Source: Deck 12, slide 18."
+    },
+    {
+      "id": 83,
+      "prompt": "What is a key limitation of many IDS deployments?",
+      "type": "multiple-choice",
+      "choices": [
+        {
+          "label": "They usually cannot inspect encrypted traffic and can be overwhelmed",
+          "value": "a"
+        },
+        {
+          "label": "They cannot analyze any logs",
+          "value": "b"
+        },
+        {
+          "label": "They automatically patch every endpoint",
+          "value": "c"
+        },
+        {
+          "label": "They cannot monitor network activity",
+          "value": "d"
+        }
+      ],
+      "correctAnswer": "a",
+      "explanation": "NIDS and HIDS analyze activity/logs, but xIDS commonly cannot inspect encrypted traffic, can be overwhelmed, and may not understand everything observed. Source: Deck 12, slide 32."
+    },
+    {
+      "id": 84,
+      "prompt": "What capability distinguishes an IPS from an IDS?",
+      "type": "multiple-choice",
+      "choices": [
+        {
+          "label": "An IPS can attempt to prevent a detected threat from succeeding",
+          "value": "a"
+        },
+        {
+          "label": "An IPS never sees network traffic",
+          "value": "b"
+        },
+        {
+          "label": "An IPS cannot run in learning mode",
+          "value": "c"
+        },
+        {
+          "label": "An IPS only writes audit reports",
+          "value": "d"
+        }
+      ],
+      "correctAnswer": "a",
+      "explanation": "IPS can terminate connections, block attributes, reconfigure controls, apply patches, or sanitize suspicious content to stop an attack. Source: Deck 12, slide 34."
+    },
+    {
+      "id": 85,
+      "prompt": "What is port scanning used to identify?",
+      "type": "multiple-choice",
+      "choices": [
+        {
+          "label": "Open ports on an endpoint or network for inventory/mitigation or tailored attacks",
+          "value": "a"
+        },
+        {
+          "label": "Only encrypted DNS records",
+          "value": "b"
+        },
+        {
+          "label": "Biometric templates",
+          "value": "c"
+        },
+        {
+          "label": "Database token vaults",
+          "value": "d"
+        }
+      ],
+      "correctAnswer": "a",
+      "explanation": "Port scanning probes to identify endpoints and service ports; it is dual-use for attack tailoring or inventory/remediation. Source: Deck 12, slide 31."
+    },
+    {
+      "id": 86,
+      "prompt": "Which are endpoint-security functional requirements listed in the deck?",
+      "type": "multi-select",
+      "choices": [
+        {
+          "label": "Asset discovery and inventory",
+          "value": "inventory"
+        },
+        {
+          "label": "Patch and configuration management",
+          "value": "patching"
+        },
+        {
+          "label": "Policy/device management including BYOD",
+          "value": "policy"
+        },
+        {
+          "label": "Integration with the SOC",
+          "value": "soc"
+        }
+      ],
+      "correctAnswer": "inventory,patching,policy,soc",
+      "explanation": "Endpoint security includes discovery/inventory, policy, patch/configuration and device management, advanced protection, IoT handling, and SOC integration. Source: Deck 12, slide 40."
+    }
+  ]
+}

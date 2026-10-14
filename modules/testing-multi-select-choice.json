@@ -1,9 +1,27 @@
 {
-  "id": "testing-multi-select-choice",
-  "title": "testing-multi-select-choice",
-  "description": "testing multiple select choice.",
-  "image": "assets/tung_tung_tung_sahur_image_streched.png",
+  "id": "testing-module",
+  "title": "testing-module",
+  "description": "testing multiple modules of questions of different types. multiple choice, text input and multi select.",
+  "image": "assets/wide_monkey_picture.png",
   "questions": [
+    {
+      "id": 1,
+      "prompt": "Type in the word bingus. or feel my wraith >:- (",
+      "type": "text",
+      "correctAnswer": "bingus",
+      "explanation": "I widwly told you to type bingus. if you failed. you r dumb lol."
+    },
+    {
+      "id": 2,
+      "prompt": "if i was made out of cheese. would you eat me?",
+      "type": "multiple-choice",
+      "choices": [
+        { "label": "yes",            "value": "yes" },
+        { "label": "no",         "value": "no" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "please don't eat me :-("
+    },
     {
       "id": 0,
       "prompt": "can you find all of the Rs in strawberry?",
