@@ -3570,6 +3570,7 @@
   function renderMultiSelectChoiceField(container, q, index) {
     console.log("renderMultiSelectChoiceField");
     let tab_amount = "	";
+    console.log(tab_amount, "userAnswers[index]: ", userAnswers[index]);
     if (!q.choices) return;
     const wrapper = document.createElement("div");
     wrapper.className = "ms-wrapper";
@@ -3580,7 +3581,8 @@
       checkbox.type = "checkbox";
       checkbox.name = `question-${q.id}`;
       checkbox.value = choice.value;
-      checkbox.checked = userAnswers[index] === choice.value;
+      const selectedAnswers = userAnswers[index] ? userAnswers[index].split(",") : [];
+      checkbox.checked = selectedAnswers.includes(choice.value);
       checkbox.addEventListener("change", () => {
         if (userAnswers[index].indexOf(choice.value) === -1) {
           console.log(tab_amount, "before: ", userAnswers[index]);
@@ -3613,10 +3615,10 @@
           }
           console.log(tab_amount, "after: ", userAnswers[index]);
         }
-        wrapper.querySelectorAll(".ms-option").forEach((el) => el.classList.remove("selected"));
-        label.classList.add("selected");
+        wrapper.querySelectorAll(".ms-option").forEach((el) => el.classList.remove("checked"));
+        label.classList.add("checked");
       });
-      if (checkbox.checked) label.classList.add("selected");
+      if (checkbox.checked) label.classList.add("checked");
       const labelText = document.createElement("span");
       labelText.className = "ms-label-text";
       labelText.innerHTML = renderLatexString(choice.label);

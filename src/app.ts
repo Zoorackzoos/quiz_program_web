@@ -306,6 +306,7 @@ function renderMultiSelectChoiceField(container: HTMLElement, q: Question, index
 {
     console.log("renderMultiSelectChoiceField")
     let tab_amount:string = "\t"
+    console.log(tab_amount,"userAnswers[index]: ",userAnswers[index]);
 
     if (!q.choices) return;
     const wrapper = document.createElement("div");
@@ -321,7 +322,10 @@ function renderMultiSelectChoiceField(container: HTMLElement, q: Question, index
         checkbox.type = "checkbox";
         checkbox.name = `question-${q.id}`;
         checkbox.value = choice.value;
-        checkbox.checked = userAnswers[index] === choice.value;
+
+        // drawing teh checked boxes based on userAnswers. useful for tab to tab operation.s
+        const selectedAnswers = userAnswers[index] ? userAnswers[index].split(",") : [];
+        checkbox.checked = selectedAnswers.includes(choice.value);
 
         checkbox.addEventListener("change", () =>
         {
@@ -377,12 +381,12 @@ function renderMultiSelectChoiceField(container: HTMLElement, q: Question, index
                 console.log(tab_amount,"after: ", (userAnswers[index]))
             }
 
-            // Visually mark selected option
-            wrapper.querySelectorAll(".ms-option").forEach(el => el.classList.remove("selected"));
-            label.classList.add("selected");
+            // Visually mark checked option
+            wrapper.querySelectorAll(".ms-option").forEach(el => el.classList.remove("checked"));
+            label.classList.add("checked");
         });
 
-        if (checkbox.checked) label.classList.add("selected");
+        if (checkbox.checked) label.classList.add("checked");
 
         const labelText = document.createElement("span");
         labelText.className = "ms-label-text";
