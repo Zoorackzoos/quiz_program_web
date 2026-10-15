@@ -19,7 +19,7 @@
         { "label": "yes",            "value": "yes" },
         { "label": "no",         "value": "no" }
       ],
-      "correctAnswer": "b",
+      "correctAnswer": "no",
       "explanation": "please don't eat me :-("
     },
     {
