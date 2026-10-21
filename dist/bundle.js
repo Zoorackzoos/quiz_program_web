@@ -1290,7 +1290,7 @@
     id: "csce-469-midterm-practice-security",
     title: "CSCE 469 Midterm Practice: Cybersecurity Core Concepts",
     description: "Comprehensive practice questions based on CSCE 469 cybersecurity slides 03-07, 11, and 12. Excludes introductions, project proposals, and Android-focused decks. Explanations include deck and slide references for review.",
-    image: "assets/old_man.png",
+    image: "assets/caracture_of_my_cyber_sec_teacher.png",
     questions: [
       {
         id: 1,
