@@ -3363,6 +3363,934 @@
     ]
   };
 
+  // modules/csce-469-2026-real-questions-practice.json
+  var csce_469_2026_real_questions_practice_default = {
+    id: "csce-469-2026-real-questions-practice",
+    title: "csce-469-2026-real-questions-practice",
+    description: "These questions are from the real exam. This particular exam had different exam sets per student, so there's loss.",
+    image: "assets/caracture_of_my_cyber_sec_teacher.png",
+    questions: [
+      {
+        id: 1,
+        prompt: "Static analysis techniques tend to __(1)__-approximate the behavior of the software, thus prone to produce __(2)__ \n what is __(1)__?",
+        type: "multiple-choice",
+        choices: [
+          {
+            label: "over",
+            value: "over"
+          },
+          {
+            label: "under",
+            value: "under"
+          }
+        ],
+        correctAnswer: "over",
+        explanation: "static analysis is when a tester approximates security vulnerabilities by examining the code critically. \n "
+      },
+      {
+        id: 2,
+        prompt: "Static analysis techniques tend to __(1)__-approximate the behavior of the software, thus prone to produce __(2)__ \n what is __(2)__?",
+        type: "multiple-choice",
+        choices: [
+          {
+            label: "false negatives",
+            value: "false negatives"
+          },
+          {
+            label: "true positives",
+            value: "true positives"
+          },
+          {
+            label: "true negatives",
+            value: "true negatives"
+          },
+          {
+            label: "false positives",
+            value: "false positives"
+          }
+        ],
+        correctAnswer: "false positives",
+        explanation: "static analysis is when a tester approximates security vulnerabilities by examining the code critically. \n "
+      },
+      {
+        id: 3,
+        prompt: "Dynamic analysis techniques tend to __(3)__-approximate the behavior of the software, thus prone to produce __(4)__",
+        type: "multiple-choice",
+        choices: [
+          {
+            label: "over",
+            value: "over"
+          },
+          {
+            label: "under",
+            value: "under"
+          }
+        ],
+        correctAnswer: "under",
+        explanation: "dynamic analysis is when a tester runs the program different ways to test security observabilities. \n "
+      },
+      {
+        id: 4,
+        prompt: "Dynamic analysis techniques tend to __(3)__-approximate the behavior of the software, thus prone to produce __(4)__",
+        type: "multiple-choice",
+        choices: [
+          {
+            label: "false negatives",
+            value: "false negatives"
+          },
+          {
+            label: "true positives",
+            value: "true positives"
+          },
+          {
+            label: "true negatives",
+            value: "true negatives"
+          },
+          {
+            label: "false positives",
+            value: "false positives"
+          }
+        ],
+        correctAnswer: "false negatives",
+        explanation: "dynamic analysis is when a tester runs the program different ways to test security observabilities. \n "
+      },
+      {
+        id: 5,
+        prompt: "Identify all the valid statements regarding security requirements.",
+        type: "multi-select",
+        choices: [
+          {
+            label: "Development of software systems with strict security requirements is more complex than others.",
+            value: "(Development of software systems with strict security requirements is more complex than others.)"
+          },
+          {
+            label: "Security is typically well aligned with other quality attributes of a software system.",
+            value: "(Security is typically well aligned with other quality attributes of a software system.)"
+          },
+          {
+            label: "Identifying security requirements starts prior to design and implementation of the system.",
+            value: "(Identifying security requirements starts prior to design and implementation of the system.)"
+          },
+          {
+            label: "Engineers work with other stakeholders to conceptually identify the implications of a security compromise.",
+            value: "(Engineers work with other stakeholders to conceptually identify the implications of a security compromise.)"
+          },
+          {
+            label: "Many security concerns are crosscutting in nature.",
+            value: "(Many security concerns are crosscutting in nature.)"
+          },
+          {
+            label: "Software security requirements can be broken into four categories of Confidentiality, Integrity, Availability, and Non-repudiation.",
+            value: "(Software security requirements can be broken into four categories of Confidentiality, Integrity, Availability, and Non-repudiation.)"
+          }
+        ],
+        correctAnswer: "(Development of software systems with strict security requirements is more complex than others.),(Engineers work with other stakeholders to conceptually identify the implications of a security compromise.),(Identifying security requirements starts prior to design and implementation of the system.),(Many security concerns are crosscutting in nature.),(Software security requirements can be broken into four categories of Confidentiality, Integrity, Availability, and Non-repudiation.)",
+        explanation: "if the ordering is fucked up tell me. use your intuition here plz"
+      },
+      {
+        id: 6,
+        prompt: "For each term or description in the following bullet list, find the term or description in the list below that most closely fits it. \n Static Analysis",
+        type: "multiple-choice",
+        choices: [
+          {
+            label: "examination of system properties without running it",
+            value: "(examination of system properties without running it)"
+          },
+          {
+            label: "ensuring software system is available for use when it is needed",
+            value: "(ensuring software system is available for use when it is needed)"
+          },
+          {
+            label: "preventing information disclosure to unauthorized entities",
+            value: "(preventing information disclosure to unauthorized entities)"
+          },
+          {
+            label: "investigation of the properties of a running software system over one or more executions",
+            value: "(investigation of the properties of a running software system over one or more executions)"
+          },
+          {
+            label: "preventing entities from denying their role in actions or communications",
+            value: "(preventing entities from denying their role in actions or communications)"
+          },
+          {
+            label: "protecting against unauthorized modification or destruction of assets",
+            value: "(protecting against unauthorized modification or destruction of assets)"
+          }
+        ],
+        correctAnswer: "(examination of system properties without running it)",
+        explanation: "don't look at me dude i just work here."
+      },
+      {
+        id: 7,
+        prompt: "For each term or description in the following bullet list, find the term or description in the list below that most closely fits it. \n Availability",
+        type: "multiple-choice",
+        choices: [
+          {
+            label: "examination of system properties without running it",
+            value: "(examination of system properties without running it)"
+          },
+          {
+            label: "ensuring software system is available for use when it is needed",
+            value: "(ensuring software system is available for use when it is needed)"
+          },
+          {
+            label: "preventing information disclosure to unauthorized entities",
+            value: "(preventing information disclosure to unauthorized entities)"
+          },
+          {
+            label: "investigation of the properties of a running software system over one or more executions",
+            value: "(investigation of the properties of a running software system over one or more executions)"
+          },
+          {
+            label: "preventing entities from denying their role in actions or communications",
+            value: "(preventing entities from denying their role in actions or communications)"
+          },
+          {
+            label: "protecting against unauthorized modification or destruction of assets",
+            value: "(protecting against unauthorized modification or destruction of assets)"
+          }
+        ],
+        correctAnswer: "(ensuring software system is available for use when it is needed)",
+        explanation: "don't look at me dude i just work here."
+      },
+      {
+        id: 8,
+        prompt: "For each term or description in the following bullet list, find the term or description in the list below that most closely fits it. \n Confidentiality",
+        type: "multiple-choice",
+        choices: [
+          {
+            label: "examination of system properties without running it",
+            value: "(examination of system properties without running it)"
+          },
+          {
+            label: "ensuring software system is available for use when it is needed",
+            value: "(ensuring software system is available for use when it is needed)"
+          },
+          {
+            label: "preventing information disclosure to unauthorized entities",
+            value: "(preventing information disclosure to unauthorized entities)"
+          },
+          {
+            label: "investigation of the properties of a running software system over one or more executions",
+            value: "(investigation of the properties of a running software system over one or more executions)"
+          },
+          {
+            label: "preventing entities from denying their role in actions or communications",
+            value: "(preventing entities from denying their role in actions or communications)"
+          },
+          {
+            label: "protecting against unauthorized modification or destruction of assets",
+            value: "(protecting against unauthorized modification or destruction of assets)"
+          }
+        ],
+        correctAnswer: "(preventing information disclosure to unauthorized entities)",
+        explanation: "don't look at me dude i just work here."
+      },
+      {
+        id: 9,
+        prompt: "For each term or description in the following bullet list, find the term or description in the list below that most closely fits it. \n Dynamic Analysis",
+        type: "multiple-choice",
+        choices: [
+          {
+            label: "examination of system properties without running it",
+            value: "(examination of system properties without running it)"
+          },
+          {
+            label: "ensuring software system is available for use when it is needed",
+            value: "(ensuring software system is available for use when it is needed)"
+          },
+          {
+            label: "preventing information disclosure to unauthorized entities",
+            value: "(preventing information disclosure to unauthorized entities)"
+          },
+          {
+            label: "investigation of the properties of a running software system over one or more executions",
+            value: "(investigation of the properties of a running software system over one or more executions)"
+          },
+          {
+            label: "preventing entities from denying their role in actions or communications",
+            value: "(preventing entities from denying their role in actions or communications)"
+          },
+          {
+            label: "protecting against unauthorized modification or destruction of assets",
+            value: "(protecting against unauthorized modification or destruction of assets)"
+          }
+        ],
+        correctAnswer: "(investigation of the properties of a running software system over one or more executions)",
+        explanation: "don't look at me dude i just work here."
+      },
+      {
+        id: 10,
+        prompt: "For each term or description in the following bullet list, find the term or description in the list below that most closely fits it. \n Non-repudiation",
+        type: "multiple-choice",
+        choices: [
+          {
+            label: "examination of system properties without running it",
+            value: "(examination of system properties without running it)"
+          },
+          {
+            label: "ensuring software system is available for use when it is needed",
+            value: "(ensuring software system is available for use when it is needed)"
+          },
+          {
+            label: "preventing information disclosure to unauthorized entities",
+            value: "(preventing information disclosure to unauthorized entities)"
+          },
+          {
+            label: "investigation of the properties of a running software system over one or more executions",
+            value: "(investigation of the properties of a running software system over one or more executions)"
+          },
+          {
+            label: "preventing entities from denying their role in actions or communications",
+            value: "(preventing entities from denying their role in actions or communications)"
+          },
+          {
+            label: "protecting against unauthorized modification or destruction of assets",
+            value: "(protecting against unauthorized modification or destruction of assets)"
+          }
+        ],
+        correctAnswer: "(preventing entities from denying their role in actions or communications)",
+        explanation: "don't look at me dude i just work here."
+      },
+      {
+        id: 11,
+        prompt: "For each term or description in the following bullet list, find the term or description in the list below that most closely fits it. \n Integrity",
+        type: "multiple-choice",
+        choices: [
+          {
+            label: "examination of system properties without running it",
+            value: "(examination of system properties without running it)"
+          },
+          {
+            label: "ensuring software system is available for use when it is needed",
+            value: "(ensuring software system is available for use when it is needed)"
+          },
+          {
+            label: "preventing information disclosure to unauthorized entities",
+            value: "(preventing information disclosure to unauthorized entities)"
+          },
+          {
+            label: "investigation of the properties of a running software system over one or more executions",
+            value: "(investigation of the properties of a running software system over one or more executions)"
+          },
+          {
+            label: "preventing entities from denying their role in actions or communications",
+            value: "(preventing entities from denying their role in actions or communications)"
+          },
+          {
+            label: "protecting against unauthorized modification or destruction of assets",
+            value: "(protecting against unauthorized modification or destruction of assets)"
+          }
+        ],
+        correctAnswer: "(protecting against unauthorized modification or destruction of assets)",
+        explanation: "don't look at me dude i just work here."
+      },
+      {
+        id: 12,
+        prompt: "Please review the following list and identify the statements that are valid.",
+        type: "multi-select",
+        choices: [
+          {
+            label: "Security policies do not impact the usability of a software system.",
+            value: "(Security policies do not impact the usability of a software system.)"
+          },
+          {
+            label: "One method of determining the extent of the attack surface is by penetration testing.",
+            value: "(One method of determining the extent of the attack surface is by penetration testing.)"
+          },
+          {
+            label: "In complex software systems, fuzzing has not been helpful for finding security issues.",
+            value: "(In complex software systems, fuzzing has not been helpful for finding security issues.)"
+          },
+          {
+            label: "Security requirements typically starts after the design of the system, and may continue throughout the software development life cycle.",
+            value: "(Security requirements typically starts after the design of the system, and may continue throughout the software development life cycle.)"
+          },
+          {
+            label: "Security can be defined in terms of a finite set of known properties that need to be present in the software.",
+            value: "(Security can be defined in terms of a finite set of known properties that need to be present in the software.)"
+          },
+          {
+            label: "Access control mechanisms can be realized as software connectors.",
+            value: "(Access control mechanisms can be realized as software connectors.)"
+          },
+          {
+            label: " Threat models are inherently incomplete.",
+            value: "( Threat models are inherently incomplete.)"
+          },
+          {
+            label: "Many security mechanisms pose an overhead on the system\u2019s performance.",
+            value: "(Many security mechanisms pose an overhead on the system\u2019s performance.)"
+          },
+          {
+            label: "In white box penetration testing, information about the system\u2019s design and implementation are used in generation of tests.",
+            value: "(In white box penetration testing, information about the system\u2019s design and implementation are used in generation of tests.)"
+          },
+          {
+            label: "A system architecture provides stakeholders with a higher-level understanding of the overall system rather than focusing on details at the implementation level.",
+            value: "(A system architecture provides stakeholders with a higher-level understanding of the overall system rather than focusing on details at the implementation level.)"
+          },
+          {
+            label: "A carefully constructed security architecture aims to minimize the attack surface.",
+            value: "(A carefully constructed security architecture aims to minimize the attack surface.)"
+          },
+          {
+            label: "The modularization of software is naturally suited to security concerns.",
+            value: "(The modularization of software is naturally suited to security concerns.)"
+          },
+          {
+            label: "Approaches to software security can be applied on different software artifacts and at different stages of software development.",
+            value: "(Approaches to software security can be applied on different software artifacts and at different stages of software development.)"
+          }
+        ],
+        correctAnswer: "(A carefully constructed security architecture aims to minimize the attack surface.), (A system architecture provides stakeholders with a higher-level understanding of the overall system rather than focusing on details at the implementation level.), (Access control mechanisms can be realized as software connectors.), (Approaches to software security can be applied on different software artifacts and at different stages of software development.), (In white box penetration testing, information about the system\u2019s design and implementation are used in generation of tests.), (Many security mechanisms pose an overhead on the system\u2019s performance.), (One method of determining the extent of the attack surface is by penetration testing.), (Security policies do not impact the usability of a software system.), (Threat models are inherently incomplete.)\n",
+        explanation: "if the ordering is fucked up tell me. use your intuition here plz"
+      },
+      {
+        id: 13,
+        prompt: "When evaluating the security of a software system, why is it difficult to confirm that the system is truly absent of all vulnerabilities?",
+        type: "multiple-choice",
+        choices: [
+          {
+            label: "Because absence of vulnerabilities can be guaranteed by relying solely on past security audits.",
+            value: "Because absence of vulnerabilities can be guaranteed by relying solely on past security audits."
+          },
+          {
+            label: "Because once testing is performed, no new vulnerabilities can ever arise.",
+            value: "Because once testing is performed, no new vulnerabilities can ever arise."
+          },
+          {
+            label: "Because vulnerabilities can always be fully enumerated and easily checked.",
+            value: "Because vulnerabilities can always be fully enumerated and easily checked."
+          },
+          {
+            label: "Because the complete set of possible vulnerabilities is generally unknown, making absolute absence impossible to prove.",
+            value: "Because the complete set of possible vulnerabilities is generally unknown, making absolute absence impossible to prove."
+          }
+        ],
+        correctAnswer: "Because the complete set of possible vulnerabilities is generally unknown, making absolute absence impossible to prove.",
+        explanation: "don't look at me dude i just work here."
+      },
+      {
+        id: 14,
+        prompt: "Which key distinction best differentiates static program analysis from dynamic program analysis?",
+        type: "multiple-choice",
+        choices: [
+          {
+            label: "Static analysis and dynamic analysis are identical methods, but applied in different programming languages.",
+            value: "Static analysis and dynamic analysis are identical methods, but applied in different programming languages."
+          },
+          {
+            label: "Static analysis verifies properties by analyzing the software\u2019s implementation logic without execution, while dynamic analysis verifies properties during execution using runtime data.",
+            value: "Static analysis verifies properties by analyzing the software\u2019s implementation logic without execution, while dynamic analysis verifies properties during execution using runtime data."
+          },
+          {
+            label: "Static analysis requires the program to run, while dynamic analysis does not.",
+            value: "Static analysis requires the program to run, while dynamic analysis does not."
+          },
+          {
+            label: "Both static and dynamic analysis require the program to be executed to check properties.",
+            value: "Both static and dynamic analysis require the program to be executed to check properties."
+          }
+        ],
+        correctAnswer: "Static analysis requires the program to run, while dynamic analysis does not.",
+        explanation: "don't look at me dude i just work here."
+      },
+      {
+        id: 15,
+        prompt: "Why do software security mechanisms need to be tailored for each software system?",
+        type: "multiple-choice",
+        choices: [
+          {
+            label: "Because all systems face identical risks, but developers prefer customization.",
+            value: "Because all systems face identical risks, but developers prefer customization."
+          },
+          {
+            label: "Because once a universal security mechanism is created, it applies equally to every system.",
+            value: "Because once a universal security mechanism is created, it applies equally to every system."
+          },
+          {
+            label: "Because software security is about managing risks, and each system faces its own unique set of risks.",
+            value: "Because software security is about managing risks, and each system faces its own unique set of risks.."
+          },
+          {
+            label: "Because risks in software security do not change between systems.",
+            value: "Because risks in software security do not change between systems."
+          }
+        ],
+        correctAnswer: "Because software security is about managing risks, and each system faces its own unique set of risks.",
+        explanation: "don't look at me dude i just work here."
+      },
+      {
+        id: 10,
+        prompt: "Some fundamental security & privacy concepts: match the description on the left with the best answer on the right.\n These need protection",
+        type: "multiple-choice",
+        choices: [
+          {
+            label: "assets",
+            value: "(assets)"
+          },
+          {
+            label: "vulnerability",
+            value: "(vulnerability)"
+          },
+          {
+            label: "exploit",
+            value: "(exploit)"
+          },
+          {
+            label: "threat",
+            value: "(threat)"
+          },
+          {
+            label: "risk",
+            value: "(risk)"
+          },
+          {
+            label: "mitigation",
+            value: "(mitigation)"
+          }
+        ],
+        correctAnswer: "(assets)",
+        explanation: "don't look at me dude i just work here."
+      },
+      {
+        id: 11,
+        prompt: "Some fundamental security & privacy concepts: match the description on the left with the best answer on the right.\n A weakness/flaw",
+        type: "multiple-choice",
+        choices: [
+          {
+            label: "assets",
+            value: "(assets)"
+          },
+          {
+            label: "vulnerability",
+            value: "(vulnerability)"
+          },
+          {
+            label: "exploit",
+            value: "(exploit)"
+          },
+          {
+            label: "threat",
+            value: "(threat)"
+          },
+          {
+            label: "risk",
+            value: "(risk)"
+          },
+          {
+            label: "mitigation",
+            value: "(mitigation)"
+          }
+        ],
+        correctAnswer: "(vulnerability)",
+        explanation: "don't look at me dude i just work here."
+      },
+      {
+        id: 12,
+        prompt: "Some fundamental security & privacy concepts: match the description on the left with the best answer on the right.\n A method to take advantage of a weakness/flaw",
+        type: "multiple-choice",
+        choices: [
+          {
+            label: "assets",
+            value: "(assets)"
+          },
+          {
+            label: "vulnerability",
+            value: "(vulnerability)"
+          },
+          {
+            label: "exploit",
+            value: "(exploit)"
+          },
+          {
+            label: "threat",
+            value: "(threat)"
+          },
+          {
+            label: "risk",
+            value: "(risk)"
+          },
+          {
+            label: "mitigation",
+            value: "(mitigation)"
+          }
+        ],
+        correctAnswer: "(exploit)",
+        explanation: "don't look at me dude i just work here."
+      },
+      {
+        id: 13,
+        prompt: "Some fundamental security & privacy concepts: match the description on the left with the best answer on the right.\n The probability of the successful use of an exploit",
+        type: "multiple-choice",
+        choices: [
+          {
+            label: "assets",
+            value: "(assets)"
+          },
+          {
+            label: "vulnerability",
+            value: "(vulnerability)"
+          },
+          {
+            label: "exploit",
+            value: "(exploit)"
+          },
+          {
+            label: "threat",
+            value: "(threat)"
+          },
+          {
+            label: "risk",
+            value: "(risk)"
+          },
+          {
+            label: "mitigation",
+            value: "(mitigation)"
+          }
+        ],
+        correctAnswer: "(threat)",
+        explanation: "don't look at me dude i just work here."
+      },
+      {
+        id: 14,
+        prompt: "Some fundamental security & privacy concepts: match the description on the left with the best answer on the right.\n The product of a threat and its impact to targeted assets",
+        type: "multiple-choice",
+        choices: [
+          {
+            label: "assets",
+            value: "(assets)"
+          },
+          {
+            label: "vulnerability",
+            value: "(vulnerability)"
+          },
+          {
+            label: "exploit",
+            value: "(exploit)"
+          },
+          {
+            label: "threat",
+            value: "(threat)"
+          },
+          {
+            label: "risk",
+            value: "(risk)"
+          },
+          {
+            label: "mitigation",
+            value: "(mitigation)"
+          }
+        ],
+        correctAnswer: "(risk)",
+        explanation: "don't look at me dude i just work here."
+      },
+      {
+        id: 15,
+        prompt: "Risk management: match the description on the left with the best answer on the right.\n Don't engage in things representing unacceptable risk",
+        type: "multiple-choice",
+        choices: [
+          {
+            label: "avoid",
+            value: "(avoid)"
+          },
+          {
+            label: "transfer",
+            value: "(transfer)"
+          },
+          {
+            label: "mitigate",
+            value: "(mitigate)"
+          },
+          {
+            label: "accept/manage",
+            value: "(accept/manage)"
+          },
+          {
+            label: "quantify",
+            value: "(quantify)"
+          }
+        ],
+        correctAnswer: "(avoid)",
+        explanation: "don't look at me dude i just work here."
+      },
+      {
+        id: 16,
+        prompt: "Risk management: match the description on the left with the best answer on the right.\n Move some risk to third parties",
+        type: "multiple-choice",
+        choices: [
+          {
+            label: "avoid",
+            value: "(avoid)"
+          },
+          {
+            label: "transfer",
+            value: "(transfer)"
+          },
+          {
+            label: "mitigate",
+            value: "(mitigate)"
+          },
+          {
+            label: "accept/manage",
+            value: "(accept/manage)"
+          },
+          {
+            label: "quantify",
+            value: "(quantify)"
+          }
+        ],
+        correctAnswer: "(transfer)",
+        explanation: "don't look at me dude i just work here."
+      },
+      {
+        id: 17,
+        prompt: "Risk management: match the description on the left with the best answer on the right.\n Reduce risk with technical and non-technical security controls",
+        type: "multiple-choice",
+        choices: [
+          {
+            label: "avoid",
+            value: "(avoid)"
+          },
+          {
+            label: "transfer",
+            value: "(transfer)"
+          },
+          {
+            label: "mitigate",
+            value: "(mitigate)"
+          },
+          {
+            label: "accept/manage",
+            value: "(accept/manage)"
+          },
+          {
+            label: "quantify",
+            value: "(quantify)"
+          }
+        ],
+        correctAnswer: "(mitigate)",
+        explanation: "don't look at me dude i just work here."
+      },
+      {
+        id: 18,
+        prompt: "Risk management: match the description on the left with the best answer on the right.\n What you do with any residual risk",
+        type: "multiple-choice",
+        choices: [
+          {
+            label: "avoid",
+            value: "(avoid)"
+          },
+          {
+            label: "transfer",
+            value: "(transfer)"
+          },
+          {
+            label: "mitigate",
+            value: "(mitigate)"
+          },
+          {
+            label: "accept/manage",
+            value: "(accept/manage)"
+          },
+          {
+            label: "quantify",
+            value: "(quantify)"
+          }
+        ],
+        correctAnswer: "(accept/manage)",
+        explanation: "don't look at me dude i just work here."
+      },
+      {
+        id: 19,
+        prompt: "Technical and non-technical security controls are sometimes described in terms of PPT (People, Process and Technology). Match the left description of a control with its type on the right.\n Safe web browsing employee orientation",
+        type: "multiple-choice",
+        choices: [
+          {
+            label: "people",
+            value: "(people)"
+          },
+          {
+            label: "process",
+            value: "(process)"
+          },
+          {
+            label: "technology",
+            value: "(technology)"
+          },
+          {
+            label: "Asymmetric key cryptography",
+            value: "(Asymmetric key cryptography)"
+          }
+        ],
+        correctAnswer: "(people)",
+        explanation: "don't look at me dude i just work here."
+      },
+      {
+        id: 20,
+        prompt: "Technical and non-technical security controls are sometimes described in terms of PPT (People, Process and Technology). Match the left description of a control with its type on the right.\n Payment Card Industry-Data Security Standard audit",
+        type: "multiple-choice",
+        choices: [
+          {
+            label: "people",
+            value: "(people)"
+          },
+          {
+            label: "process",
+            value: "(process)"
+          },
+          {
+            label: "technology",
+            value: "(technology)"
+          },
+          {
+            label: "Asymmetric key cryptography",
+            value: "(Asymmetric key cryptography)"
+          }
+        ],
+        correctAnswer: "(process)",
+        explanation: "don't look at me dude i just work here."
+      },
+      {
+        id: 21,
+        prompt: "Technical and non-technical security controls are sometimes described in terms of PPT (People, Process and Technology). Match the left description of a control with its type on the right.\n Passkey strong authentication",
+        type: "multiple-choice",
+        choices: [
+          {
+            label: "people",
+            value: "(people)"
+          },
+          {
+            label: "process",
+            value: "(process)"
+          },
+          {
+            label: "technology",
+            value: "(technology)"
+          },
+          {
+            label: "Asymmetric key cryptography",
+            value: "(Asymmetric key cryptography)"
+          }
+        ],
+        correctAnswer: "(technology)",
+        explanation: "don't look at me dude i just work here."
+      },
+      {
+        id: 22,
+        prompt: "When you create an application that accepts users' files as input, you must do which of the following things to protect the application?",
+        type: "multi-select",
+        choices: [
+          {
+            label: "Sandbox/quarantine user files, only accepting them after analysis/remediation",
+            value: "(Sandbox/quarantine user files, only accepting them after analysis/remediation)"
+          },
+          {
+            label: "Control internal file naming/location",
+            value: "(Control internal file naming/location)"
+          },
+          {
+            label: "Define/enforce acceptable file formats",
+            value: "(Define/enforce acceptable file formats)"
+          },
+          {
+            label: "White-list trusted users",
+            value: "(White-list trusted users)"
+          },
+          {
+            label: "Ensure user files are never executed",
+            value: "(Ensure user files are never executed)"
+          }
+        ]
+      },
+      {
+        id: 23,
+        prompt: "This security control is invoked before letting an endpoint connect to a network.",
+        type: "multiple-choice",
+        choices: [
+          {
+            label: "Border Gateway Protocol",
+            value: "Border Gateway Protocol"
+          },
+          {
+            label: "Network Address Translation",
+            value: "Network Address Translation"
+          },
+          {
+            label: "Network Access Control",
+            value: "Network Access Control"
+          }
+        ],
+        correctAnswer: "Network Access Control",
+        explanation: "pretty self evident? if not. please don't yell at me >_<"
+      },
+      {
+        id: 24,
+        prompt: "Match the description of why an Intrusion Detection System (IDS) raises an alarm with its core methodology/approach.\n Events match known bad patterns",
+        type: "multiple-choice",
+        choices: [
+          {
+            label: "specification based",
+            value: "(specification based)"
+          },
+          {
+            label: "anomaly based",
+            value: "(anomaly based)"
+          },
+          {
+            label: "specification based",
+            value: "(specification based)"
+          }
+        ],
+        correctAnswer: "(specification based)",
+        explanation: "don't look at me dude i just work here."
+      },
+      {
+        id: 25,
+        prompt: "Match the description of why an Intrusion Detection System (IDS) raises an alarm with its core methodology/approach.\n Events deviate from defined good patterns",
+        type: "multiple-choice",
+        choices: [
+          {
+            label: "specification based",
+            value: "(specification based)"
+          },
+          {
+            label: "anomaly based",
+            value: "(anomaly based)"
+          },
+          {
+            label: "specification based",
+            value: "(specification based)"
+          }
+        ],
+        correctAnswer: "(specification based)",
+        explanation: "don't look at me dude i just work here."
+      },
+      {
+        id: 26,
+        prompt: "Match the description of why an Intrusion Detection System (IDS) raises an alarm with its core methodology/approach.\n Events deviate from average/learned patterns",
+        type: "multiple-choice",
+        choices: [
+          {
+            label: "specification based",
+            value: "(specification based)"
+          },
+          {
+            label: "anomaly based",
+            value: "(anomaly based)"
+          },
+          {
+            label: "specification based",
+            value: "(specification based)"
+          }
+        ],
+        correctAnswer: "(anomaly based)",
+        explanation: "don't look at me dude i just work here."
+      }
+    ]
+  };
+
   // modules/index.ts
   var allModules = [
     example_algebra_default,
@@ -3372,7 +4300,8 @@
     Linear_Algebra_314_final_practice_2_default,
     Linear_Algebra_reci_practice_default,
     testing_multi_select_choice_default,
-    csce_469_midterm_practice_security_default
+    csce_469_midterm_practice_security_default,
+    csce_469_2026_real_questions_practice_default
     // Add more modules here, e.g.:
     // myNewModule as Module,
   ];
